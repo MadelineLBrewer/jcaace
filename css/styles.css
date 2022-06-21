@@ -1,0 +1,318 @@
+/* jcaa logo similar green #95CD41; subtle blue #D6E5FA ,subtle green #E7FBBE; ideas for color pallet dark blue #506BE6; orange #ff8400*/
+
+/*Test zone*/
+
+
+
+/******************Home Page*************************/
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+}
+
+h2, h4, h5 {
+  color: #2C5460;
+}
+
+hr {
+  border-top: 3px groove #000;
+  box-shadow: 0 4px 9px rgba(0,0,0, 0.30);
+  width: 20%;
+  margin: auto;
+  
+}
+
+
+.navbar, .navbar-brand {
+  padding: 0;
+}
+
+.navbar-toggler, .navbar-collapse {
+  margin: 0 2em;
+}
+
+
+.jcaa-logo {
+  padding: 0;
+}
+
+footer {
+  background-color: gray;
+}
+
+/***Title Section Homepage*/
+
+#title {
+  background-color: #D6E5FA;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.cta {
+  background-color: #FFA500;
+  padding: 3em 1em;
+  text-align: center;
+  margin: 0;
+}
+
+/****Container holding the image and the text on home page ****/
+
+.masthead{
+    background-size: cover;
+    min-height: 75vh;
+    position: relative;
+    color: white;
+}
+
+h1{
+    font-size: 3rem;
+    color: white /**#506BE6**/;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+.color-overlay{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.top-right {
+  text-align: right;
+  width:50%;
+  padding: 7% 5%;
+}
+
+.heading-text{
+  padding: 5% 0px 0px;
+}
+
+/*******Media Queries*/
+@media(max-width: 871px){
+    .masthead{
+        min-height: 60vh;
+    }
+
+    h1{
+        font-size: calc(1rem + 3.3vw);
+    }
+
+    span{
+      display: none;
+    }
+}
+
+.qualifications {
+  text-align: center;
+  padding: 10% 0;
+  margin: 0;
+}
+
+.qualification-item {
+padding: 2rem 1rem;
+}
+
+.big-detail{
+  color: white;
+}
+
+.small-detail{
+  /*color:#95CD41;*/
+  color: #A0E418;
+}
+
+/****Services section homepage*/
+
+#services {
+  padding: 7% 5%;
+  text-align: center;
+  background-color: #CBE0E0;
+}
+
+.homepage-icon {
+  color: #61B136;
+  margin: 1em 0.5em;
+}
+
+.services-category{
+  padding: 0 0 2em;
+}
+
+/***Projects section homepage*/
+
+#projects {
+  padding: 7% 5%;
+  text-align: center;
+}
+
+.placeholder-for-image{
+  height: 300px;
+  width: 60%;
+  background: white;
+  margin: 5% auto;
+}
+
+/****Contact section homepage*/
+
+.google-maps {
+  position: relative;
+  margin-top: 1em;
+  padding-bottom: 40%;
+  height: 0;
+  overflow: hidden;
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.contact {
+  padding: 7% 5% 0;
+  text-align: center;
+  background-color: #CBE0E0;;
+}
+
+.contact-info {
+  padding: 6% 3%;
+}
+
+.contact-icon{
+  color: #61B136;
+  padding: 0.75em;
+}
+
+/***Footer*/
+
+.footer{
+  margin: 0;
+  padding: 5% 3%;
+  text-align: center;
+  color: white;
+}
+
+/*End Home Page*/
+
+/*************************About Page********************/
+
+.about-body{
+  background-color: #CBE0E0;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+#personnel {
+  text-align: center;
+  padding: 0 4em 3em;
+}
+
+.about-content{
+  background-color: white;
+  margin-top: 1em;
+  padding: 2em 3em;
+}
+
+.about-us{
+  padding: 0 7%;
+}
+
+.staff {
+  text-align: center;
+}
+
+.profile-pic {
+  max-width: 50%;
+  height: auto;
+  border-radius: 100%;
+  padding: 15% 7%;
+}
+
+/***********************Services Page*****************/
+.services-body{
+  background-color: #CBE0E0;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+.page-title {
+  text-align: center;
+  margin: 10% 5% 0%;
+  color: #2C5460;
+}
+
+.card{
+  width: 80%;
+  margin: 5% auto;
+  background-color: white;
+  border: solid 1px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1)
+}
+
+.services-info {
+  text-align: center;
+}
+
+.services-image {
+  width: 400px;
+  height: 250px;
+  background-color: red;
+  margin: 5% auto;
+}
+
+.expandMoreContent{
+  height: 5px;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+  position: relative;
+}
+
+.expandMoreContent.expand-active{
+  height: auto;
+  transition: height 0.5s ease-in-out;
+}
+
+.expandMoreHolder {
+  padding: 15px 0;
+  text-align: center;
+}
+
+.btn-expand-more {
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+
+.services-description {
+  padding: 3.5% 5%;
+}
+
+/***********************Projects Page*******************/
+
+.projects-body {
+  background-color: #CBE0E0;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+.projects-category{
+text-align: center;
+padding: 7% 5%;
+}
+
+
+/**************************Careers Page******************/
+
+.careers-body {
+  background-color: #CBE0E0;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+.contact-form{
+  padding: 7% 5%;
+}
+
+.careers-descriptions{
+  padding: 5% 5%;
+}
