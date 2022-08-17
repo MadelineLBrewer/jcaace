@@ -9,20 +9,23 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
 
+<!--Animate on Scroll styles-->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
  <!--Google Fonts-->
- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap" rel="stylesheet">
 
 
    <!-- Bootstrap Script -->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 
-<body class="about-body">
+<body class="container-fluid">
   <section id="navbar">
 
     <!-- Nav Bar -->
     <nav class="navbar bg-dark navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="">
+      <a class="navbar-brand" href="index.html">
         <img class="img-fluid jcaa-logo" src="images/jcaalogo.png" alt="jcaa-logo">
       </a>
 
@@ -32,22 +35,22 @@
 
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
+          <li class="nav-item d-flex justify-content-end">
             <a class="nav-link" href="index.html">Home</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item d-flex justify-content-end">
             <a class="nav-link" href="about.html">About Us</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item d-flex justify-content-end">
             <a class="nav-link" href="services.html">Services</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item d-flex justify-content-end">
             <a class="nav-link" href="projects.html">Projects</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item d-flex justify-content-end">
             <a class="nav-link" href="careers.html">Careers</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item d-flex justify-content-end">
             <a class="nav-link" href="index.html#contact">Contact</a>
           </li>
         </ul>
@@ -56,12 +59,20 @@
   </section>
 
   <div class="about-us">
-    <h1 class="page-title">ABOUT US</h1>
-    <hr>
+
+
+
+    <div class="underlined-title">
+      <h1 class="fw-bold dark-title page-title display-2">
+     <div>ABOUT US</div>
+      <hr data-aos="slide-right"/>
+    </h1>
+  </a>
+</div>
+
   
     <div class="about-content text-secondary">
-    <p>
-      JCAA is located in Wheat Ridge, Colorado, off of Wadsworth Boulevard.</p> <p> JCAA Consulting Engineers, LLC is a Mechanical, Electrical, Plumbing and Structural Engineering firm offering design and consulting services.  We specialize in commercial projects such as retail shopping centres, multifamily, places of worship, medical facilities, and more. We have the team to take your project from conception to construction to completion. We excel at listening to our clients and providing the right product or design to best fit their needs. Whether it's designing an energy efficient new building or remodeling an existing space, we deliver.</p>
+    <p> JCAA Consulting Engineers, LLC is a Mechanical, Electrical, Plumbing and Structural Engineering firm offering design and consulting services.  We specialize in commercial projects such as retail shopping centres, multifamily, places of worship, medical facilities, and more. We have the team to take your project from conception to construction to completion. We excel at listening to our clients and providing the right product or design to best fit their needs. Whether it's designing an energy efficient new building or remodeling an existing space, we deliver.</p>
 
 <p>Members of our team have been in the engineering industry for decades. Several members of our staff have worked together for over 20 years, first at Alber Engineering, then at JBA Consulting Engineers and finally at JCAA. Longevity is a common theme with our employees. Other members of our staff have been designing and managing projects for over 20 years. The common thread that ties all of our employees together is our ability to deliver quality projects and designs on time to our clients.
     </p>
@@ -73,8 +84,13 @@
 
   <section id="personnel">
 
-      <h1 class="page-title">PERSONNEL</h1>
-        <hr>
+    <div class="underlined-title">
+      <h1 class="fw-bold dark-title page-title display-2">
+     <div>PERSONNEL</div>
+      <hr data-aos="slide-right"/>
+    </h1>
+  </a>
+</div>
 
       <div class="row text-secondary">
       <div class="staff col-lg-3 col-md-6 col-sm-6">
@@ -104,11 +120,30 @@
 
   <!-- Footer -->
   <footer>
+    <div class="row w-50 footer-detail">
+      <div class="col-md-6 mb-4">
+      <h5 style="color: white;">Phone: 303-985-3260</h5>
+      
+    </div>
+    <div class="col-md-6 mb-4">
+      <h5 style="color: white;">Fax: 303-987-2304</h5>
+      
+    </div>
+  </div>
     <div>
-      <p class="footer">© <script>document.write(new Date().getFullYear())</script> JCAA Consulting Engineers, LLC. All Rights Reserved.</p>
+      <p >© <script>document.write(new Date().getFullYear())</script> JCAA Consulting Engineers, LLC. All Rights Reserved.</p>
 
     </div>
   </footer>
+
+    <!--Animate on scroll Script-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+        once: true,
+      });
+    </script>
 
 </body>
 

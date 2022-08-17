@@ -3,26 +3,35 @@
 /*Test zone*/
 
 
-
 /******************Home Page*************************/
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+h3{
+  color: white;
+  font-family: 'Lora', serif;
 }
 
 h2, h4, h5 {
   color: #2C5460;
+  font-family: 'Lora', serif;
 }
 
 hr {
-  border-top: 3px groove #000;
-  box-shadow: 0 4px 9px rgba(0,0,0, 0.30);
-  width: 20%;
-  margin: auto;
-  
+width: 100%;
+opacity: 1;
+display: block;
+border-top: 7px solid #A0E418;
 }
 
+.underlined-title{
+  display: flex;
+  justify-content: center;
+}
 
 .navbar, .navbar-brand {
   padding: 0;
@@ -37,9 +46,6 @@ hr {
   padding: 0;
 }
 
-footer {
-  background-color: gray;
-}
 
 /***Title Section Homepage*/
 
@@ -49,6 +55,7 @@ footer {
 
 .container-fluid {
   padding: 0;
+  background-color: #F7F7F7;
 }
 
 .cta {
@@ -73,21 +80,32 @@ h1{
     text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
 }
 
+.dark-title {
+  color: #5D5D5D;
+}
+
 .color-overlay{
-    position: absolute;
+    position: relative;
     width:100%;
     height:100%;
     background-color: rgba(0,0,0,0.2);
+    /* right: 0px;
+    top: 0px; */
 }
 
 .top-right {
   text-align: right;
-  width:50%;
+  /*width:50%;*/
   padding: 7% 5%;
 }
 
 .heading-text{
-  padding: 5% 0px 0px;
+  padding: 5% 3% 0;
+  line-height: 2;
+}
+
+h1.heading-text{
+  font-weight: bold;
 }
 
 /*******Media Queries*/
@@ -117,6 +135,7 @@ padding: 2rem 1rem;
 
 .big-detail{
   color: white;
+  padding-bottom: 7%;
 }
 
 .small-detail{
@@ -129,7 +148,7 @@ padding: 2rem 1rem;
 #services {
   padding: 7% 5%;
   text-align: center;
-  background-color: #CBE0E0;
+  background-color: #F7F7F7;
 }
 
 .homepage-icon {
@@ -148,18 +167,30 @@ padding: 2rem 1rem;
   text-align: center;
 }
 
+.carousel{
+  margin: 1em 3em 0;
+}
+
+.centered {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .placeholder-for-image{
-  height: 300px;
-  width: 60%;
+  height: 400px;
+  width: 100%;
   background: white;
   margin: 5% auto;
+  background-size: cover;
 }
 
 /****Contact section homepage*/
 
 .google-maps {
   position: relative;
-  margin-top: 1em;
+  margin: 1em 3em 0;
   padding-bottom: 40%;
   height: 0;
   overflow: hidden;
@@ -175,7 +206,7 @@ padding: 2rem 1rem;
 .contact {
   padding: 7% 5% 0;
   text-align: center;
-  background-color: #CBE0E0;;
+  background-color: #F7F7F7;
 }
 
 .contact-info {
@@ -189,21 +220,23 @@ padding: 2rem 1rem;
 
 /***Footer*/
 
-.footer{
+footer{
   margin: 0;
   padding: 5% 3%;
   text-align: center;
   color: white;
+  background-color: gray;
+  font-family: 'Lora', serif;
+}
+
+.footer-detail{
+  margin: auto;
 }
 
 /*End Home Page*/
 
 /*************************About Page********************/
 
-.about-body{
-  background-color: #CBE0E0;
-  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-}
 
 #personnel {
   text-align: center;
@@ -211,9 +244,9 @@ padding: 2rem 1rem;
 }
 
 .about-content{
-  background-color: white;
   margin-top: 1em;
   padding: 2em 3em;
+  font-family: 'Lora', serif;
 }
 
 .about-us{
@@ -232,15 +265,13 @@ padding: 2rem 1rem;
 }
 
 /***********************Services Page*****************/
-.services-body{
-  background-color: #CBE0E0;
-  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-}
+
 
 .page-title {
   text-align: center;
   margin: 10% 5% 0%;
   color: #2C5460;
+  font-weight: bold;
 }
 
 .card{
@@ -253,13 +284,18 @@ padding: 2rem 1rem;
 
 .services-info {
   text-align: center;
+  
 }
 
 .services-image {
-  width: 400px;
-  height: 250px;
-  background-color: red;
-  margin: 5% auto;
+  max-width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.service-img{
+  width: 100%;
+  margin: auto;
 }
 
 .expandMoreContent{
@@ -291,22 +327,54 @@ padding: 2rem 1rem;
 
 /***********************Projects Page*******************/
 
-.projects-body {
-  background-color: #CBE0E0;
-  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+
+.project-image{
+  height:300px;
+  width: 50%;
+  background-color: red;
+  text-align: center;
 }
 
-.projects-category{
-text-align: center;
-padding: 7% 5%;
+.box-wrapper{
+  display:flex;
+  flex-wrap: wrap;
+  margin: 2em;
 }
+
+#more1, #more2, #more3{
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+  .box-1{
+      order:0;
+  }
+  .box-2{
+      order:1;
+  }
+  .box-3{
+      order:3;
+  }
+  .box-4{
+      order:2;
+  }
+  .box-5{
+      order:4;
+  }
+  .box-6{
+      order:5;
+  }
+  
+}
+
+
 
 
 /**************************Careers Page******************/
 
-.careers-body {
-  background-color: #CBE0E0;
-  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+
+.careers-page{
+  margin: 1em 3em ;
 }
 
 .contact-form{
@@ -316,3 +384,7 @@ padding: 7% 5%;
 .careers-descriptions{
   padding: 5% 5%;
 }
+
+/*.accordion{
+  margin: 1em 3em ;
+}*/
