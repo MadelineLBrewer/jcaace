@@ -1,39 +1,31 @@
-/* jcaa logo similar green #95CD41; subtle blue #D6E5FA ,subtle green #E7FBBE; ideas for color pallet dark blue #506BE6; orange #ff8400*/
-
-/*Test zone*/
-
 
 /******************Home Page*************************/
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.5;
-}
 
 h3{
   color: white;
   font-family: 'Lora', serif;
 }
 
-h2, h4, h5 {
+h2, h4 {
   color: #2C5460;
   font-family: 'Lora', serif;
 }
 
 hr {
-width: 100%;
+width: 50%;
 opacity: 1;
 display: block;
 border-top: 7px solid #A0E418;
+margin: 0.25em auto;
 }
 
 .underlined-title{
   display: flex;
   justify-content: center;
+  padding-bottom: 2em;
 }
 
-.navbar, .navbar-brand {
+.navbar, .navbar-brand, .jcaa-logo {
   padding: 0;
 }
 
@@ -41,11 +33,19 @@ border-top: 7px solid #A0E418;
   margin: 0 2em;
 }
 
-
-.jcaa-logo {
-  padding: 0;
+.nav-link{
+  transition: 0s;
 }
 
+.nav-link:hover{
+  background-color: #FFA500;
+  border-radius: 25px;
+  
+}
+
+.homepage-section{
+  padding: 10% 5%;
+}
 
 /***Title Section Homepage*/
 
@@ -56,13 +56,6 @@ border-top: 7px solid #A0E418;
 .container-fluid {
   padding: 0;
   background-color: #F7F7F7;
-}
-
-.cta {
-  background-color: #FFA500;
-  padding: 3em 1em;
-  text-align: center;
-  margin: 0;
 }
 
 /****Container holding the image and the text on home page ****/
@@ -76,12 +69,13 @@ border-top: 7px solid #A0E418;
 
 h1{
     font-size: 3rem;
-    color: white /**#506BE6**/;
+    color: white;
     text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
 }
 
 .dark-title {
   color: #5D5D5D;
+  font-weight: bold;
 }
 
 .color-overlay{
@@ -89,13 +83,10 @@ h1{
     width:100%;
     height:100%;
     background-color: rgba(0,0,0,0.2);
-    /* right: 0px;
-    top: 0px; */
 }
 
 .top-right {
   text-align: right;
-  /*width:50%;*/
   padding: 7% 5%;
 }
 
@@ -108,25 +99,28 @@ h1.heading-text{
   font-weight: bold;
 }
 
-/*******Media Queries*/
+.see-more{
+  color:white;
+}
+
+/*******Media Queries******/
 @media(max-width: 871px){
     .masthead{
-        min-height: 60vh;
+        min-height: 50vh;
     }
 
     h1{
         font-size: calc(1rem + 3.3vw);
     }
-
-    span{
-      display: none;
-    }
 }
+
+/********* Qualification section home page  */
 
 .qualifications {
   text-align: center;
-  padding: 10% 0;
+  padding: 10% 5%;
   margin: 0;
+  background-color: gray;
 }
 
 .qualification-item {
@@ -136,19 +130,26 @@ padding: 2rem 1rem;
 .big-detail{
   color: white;
   padding-bottom: 7%;
+  font-weight: bold;
 }
 
 .small-detail{
-  /*color:#95CD41;*/
   color: #A0E418;
 }
 
 /****Services section homepage*/
 
 #services {
-  padding: 7% 5%;
   text-align: center;
   background-color: #F7F7F7;
+}
+
+.white-overlay{
+  position: relative;
+  width:100%;
+  height:100%;
+  background-color: rgba(255, 255, 255, 0.75);
+  
 }
 
 .homepage-icon {
@@ -163,13 +164,37 @@ padding: 2rem 1rem;
 /***Projects section homepage*/
 
 #projects {
-  padding: 7% 5%;
   text-align: center;
+  background-color: gray;
+}
+
+.project-type{
+  color:#2C5460;
+  /* font-weight: bold; */
+  font-family: 'Lora', serif;
 }
 
 .carousel{
   margin: 1em 3em 0;
 }
+
+.carousel-control{
+  width: 50px;
+  height: 50px;
+  background-color:rgba(0, 0, 0, 0.2);
+  top: 40%;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.carousel-control-prev{
+  left: 5%;
+}
+
+.carousel-control-next{
+right: 5%;
+}
+
 
 .centered {
   position: relative;
@@ -182,7 +207,7 @@ padding: 2rem 1rem;
   height: 400px;
   width: 100%;
   background: white;
-  margin: 5% auto;
+  margin: auto;
   background-size: cover;
 }
 
@@ -203,14 +228,11 @@ padding: 2rem 1rem;
   height: 100% !important;
 }
 
-.contact {
+.contact-info {
   padding: 7% 5% 0;
   text-align: center;
-  background-color: #F7F7F7;
-}
-
-.contact-info {
-  padding: 6% 3%;
+  color: #2C5460;
+  font-family: 'Lora', serif;
 }
 
 .contact-icon{
@@ -222,7 +244,7 @@ padding: 2rem 1rem;
 
 footer{
   margin: 0;
-  padding: 5% 3%;
+  padding: 10% 7%;
   text-align: center;
   color: white;
   background-color: gray;
@@ -237,20 +259,39 @@ footer{
 
 /*************************About Page********************/
 
-
 #personnel {
   text-align: center;
-  padding: 0 4em 3em;
+  padding: 3em 4em;
+  background-color: #c4c4c4;
+}
+
+.personnel-detail{
+  font-family: 'Lora', serif;
+  color: white;
+}
+
+.wowzers{
+  background-size: cover;
+  overflow: hidden;
+  padding: 0;
+  object-fit: cover;
+  display: block;
 }
 
 .about-content{
-  margin-top: 1em;
-  padding: 2em 3em;
+  padding: 0 3em 2em;
   font-family: 'Lora', serif;
 }
 
+.about-image{
+  height:20%;
+  width: 100%;
+  text-align: center;
+  background-size: cover;
+}
+
 .about-us{
-  padding: 0 7%;
+  margin: auto;
 }
 
 .staff {
@@ -264,38 +305,60 @@ footer{
   padding: 15% 7%;
 }
 
-/***********************Services Page*****************/
+/*******Media Queries******/
 
+@media screen and (max-width: 480px){
+  .wowzers{
+    display:none;
+  }
+
+  .about-content{
+    background-size: cover;
+  }
+}
+
+/***********************Services Page*****************/
 
 .page-title {
   text-align: center;
-  margin: 10% 5% 0%;
+  margin: 7% 5% 0%;
   color: #2C5460;
   font-weight: bold;
+  
 }
 
 .card{
   width: 80%;
-  margin: 5% auto;
+  margin: 2em auto;
   background-color: white;
   border: solid 1px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1)
 }
 
 .services-info {
-  text-align: center;
-  
+  display: flex;
+  justify-content:center;
+  color: #2C5460;
 }
 
 .services-image {
   max-width: 100%;
-  height: 100%;
-  margin: auto;
+  height: 300px;
+  background-size: cover;
 }
 
 .service-img{
   width: 100%;
   margin: auto;
+}
+
+.service-btn{
+  border-radius: 12px;
+  padding: 0.5em;
+}
+
+.service-btn:hover{
+  background-color:#A0E418;
 }
 
 .expandMoreContent{
@@ -327,64 +390,93 @@ footer{
 
 /***********************Projects Page*******************/
 
-
 .project-image{
-  height:300px;
+  height:500px;
   width: 50%;
-  background-color: red;
   text-align: center;
+  background-size: cover;
+  padding: 0;
+}
+
+.project-text{
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+}
+
+.project-btn{
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+  margin: auto;
+  padding: 0.5em;
+}
+
+.project-btn:hover{
+  background-color: #A0E418;
+}
+
+.project-info{
+  padding: 1.5em 3em;
 }
 
 .box-wrapper{
   display:flex;
   flex-wrap: wrap;
-  margin: 2em;
+  margin: auto;
+}
+
+.read-more{
+  display: flex;
+  justify-content: center;
 }
 
 #more1, #more2, #more3{
   display: none;
 }
 
+/*******Media Queries******/
+
 @media screen and (max-width: 768px){
+  .project-info{
+    padding: 2em 4em;
+  }
+  
   .box-1{
       order:0;
+      width: 100%;
+      height: 250px;
   }
   .box-2{
       order:1;
+      width: 100%;
   }
   .box-3{
       order:3;
+      width: 100%;
   }
   .box-4{
       order:2;
+      width: 100%;
+      height: 250px;
   }
   .box-5{
       order:4;
+      width: 100%;
+      height: 250px;
   }
   .box-6{
       order:5;
-  }
-  
+      width: 100%;
+  }  
 }
-
-
-
 
 /**************************Careers Page******************/
-
-
-.careers-page{
-  margin: 1em 3em ;
-}
 
 .contact-form{
   padding: 7% 5%;
 }
 
 .careers-descriptions{
-  padding: 5% 5%;
+  padding: 7% 10%;
 }
-
-/*.accordion{
-  margin: 1em 3em ;
-}*/
