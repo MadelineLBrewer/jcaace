@@ -35,9 +35,9 @@
 
   <!-- Nav Bar -->
   <section id="navbar">
-    <nav class="navbar bg-dark navbar-expand-lg navbar-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
       <a class="navbar-brand" href="index.html">
-        <img class="img-fluid jcaa-logo" src="images/jcaalogo.png" alt="jcaa-logo">
+        <img class="img-fluid jcaa-logo" src="images/jcaa-logo.png" alt="jcaa-logo">
       </a>
 
 
@@ -58,11 +58,22 @@
               <h5>About Us</h5>
             </a>
           </li>
-          <li class="nav-item d-flex justify-content-end">
-            <a class="nav-link" href="services.html">
+
+          <li class="nav-item dropdown d-flex justify-content-end">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <h5>Services</h5>
             </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="mechanical.html">Mechanical</a></li>
+              <li><a class="dropdown-item" href="electrical.html">Electrical</a></li>
+              <li><a class="dropdown-item" href="plumbing.html">Plumbing</a></li>
+              <li><a class="dropdown-item" href="structural.html">Structural</a></li>
+              <li><a class="dropdown-item" href="commissioning.html">Commissioning</a></li>
+            </ul>
           </li>
+
+
+
           <li class="nav-item d-flex justify-content-end">
             <a class="nav-link" href="projects.html">
               <h5>Projects</h5>
@@ -88,26 +99,24 @@
   <section id="title">
 
     <div class="masthead" style="background-image: url('images/building-img.jpg');">
-      <div class="color-overlay" style="min-height: 100vh;">
-      <div class="top-right">
-        <h1 class="heading-text display-2">
+      <div class="color-overlay">
+        <div class="top-right">
+          <h1 class="heading-text display-2">
 
-          Excellence and innovation built into every design.
+            Excellence and innovation built into every design.
 
-        </h1>
-        <h4 
-        class="heading-text" 
-        style="color: white;">
-        Welcome to JCAA Consulting Engineers, LLC. We are a full service
-          MEPS engineering firm offering design and consulting services. 
-          We specialize in commercial projects such
-            as retail shopping centres, multifamily, places of worship, medical facilities, and 
+          </h1>
+          <h4 class="heading-text">
+            Welcome to JCAA Consulting Engineers, LLC. We are a full service
+            MEPS engineering firm offering design and consulting services.
+            We specialize in commercial projects such
+            as retail shopping centres, multifamily, places of worship, medical facilities, and
             <a class="see-more" href="about.html">
               more...
             </a>
           </h4>
 
-      </div>
+        </div>
       </div>
     </div>
   </section>
@@ -119,17 +128,17 @@
       <h3 class="small-detail">Year Established</h3>
     </div>
 
-    
+
 
     <div id="qualification-2" class="qualification-item col-md-4 col-sm-12">
-      <h1 class="big-detail display-3" data-aos="fade-in">AWARD</h1>
-      <h3 class="small-detail">Certified by the State of Colorado</h3>
+      <h1 class="big-detail display-3" data-aos="fade-in">Licensed in</h1>
+      <h3 class="small-detail">Colorado, Texas, California, etc.</h3>
     </div>
 
-    
+
 
     <div id="qualification-3" class="qualification-item col-md-4 col-sm-12">
-      <h1 class="big-detail display-3" data-aos="fade-in">500+</h1>
+      <h1 class="big-detail display-3" data-aos="fade-in">3000+</h1>
       <h3 class="small-detail">Projects Completed</h3>
     </div>
 
@@ -153,24 +162,40 @@
         </div>
 
         <div class="row" data-aos="fade-in">
-          <div class="col-lg-3 col-md-6 col-xs-6 services-category">
-            <i class="fa-solid fa-gear fa-4x homepage-icon"></i>
+          <div class="col-lg-4 col-md-6 col-xs-6 services-category">
+            
+            <i class="fa-solid fa-gear fa-3x homepage-icon"></i>
+            <a class="service-link nav-link" href="mechanical.html">
             <h2>Mechanical</h2>
+          </a>
           </div>
 
-          <div class="col-lg-3 col-md-6 col-xs-6 services-category">
-            <i class="fa-solid fa-bolt-lightning fa-4x homepage-icon"></i>
+          <div class="col-lg-4 col-md-6 col-xs-6 services-category">
+            <i class="fa-solid fa-bolt-lightning fa-3x homepage-icon"></i>
+            <a class="service-link nav-link" href="electrical.html">
             <h2>Electrical</h2>
+            </a>
           </div>
 
-          <div class="col-lg-3 col-md-6 col-xs-6 services-category">
-            <i class="fa-solid fa-wrench fa-4x homepage-icon"></i>
+          <div class="col-lg-4 col-md-6 col-xs-6 services-category">
+            <i class="fa-solid fa-faucet-drip fa-3x homepage-icon"></i>
+            <a class="service-link nav-link" href="plumbing.html">
             <h2>Plumbing</h2>
+            </a>
           </div>
 
-          <div class="col-lg-3 col-md-6 col-xs-6 services-category">
-            <i class="fa-solid fa-building-columns fa-4x homepage-icon"></i>
+          <div class="col-lg-6 col-md-6 col-xs-6 services-category">
+            <i class="fa-solid fa-building-columns fa-3x homepage-icon"></i>
+            <a class="service-link nav-link" href="structural.html">
             <h2>Structural</h2>
+            </a>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-xs-6 services-category">
+            <i class="fa-regular fa-circle-check fa-3x homepage-icon"></i>
+            <a class="service-link nav-link" href="commissioning.html">
+            <h2>Commissioning</h2>
+            </a>
           </div>
         </div>
       </div>
@@ -191,64 +216,104 @@
         </a>
       </div>
 
-      <div id="carouselWithIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500"
-        data-bs-pause="hover">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselWithIndicators" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselWithIndicators" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselWithIndicators" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+      <div class="row d-flex justify-content-center">
 
-            <div class="placeholder-for-image" style="background-image: url('images/denver.jpg');">
-              <div class="white-overlay">
-                <h1 class="centered">
-                  <div class="project-type display-5">
-                  LEED
-                </div>
-                </h1>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-
-            <div class="placeholder-for-image" style="background-image: url('images/skyscrapers.jpg');">
-              <div class="white-overlay">
-                <h1 class="centered">
-                  <div class="project-type display-5">
-                  Commercial
-                </div>
-                </h1>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-
-            <div class="placeholder-for-image" style="background-image: url('images/cranes-construction.jpg');">
-              <div class="white-overlay">
-                <h1 class="centered">
-                  <div class="project-type display-5">
-                  Education
-                </div>
-                </h1>
-              </div>
-            </div>
+        <div class="col-md-4 project-type" style="background-image:url('images/cranes-construction.jpg')">
+          <div class="black-overlay">
+            <div class="project-icon-title centered">
+              <a class="nav-link" href="LEED.html">
+              <i class="fa-solid fa-2x fa-leaf project-icon"></i>
+          
+            <h2 class="project-text">LEED</h2>
+          </a>
           </div>
         </div>
-        <button class="carousel-control-prev carousel-control" type="button" data-bs-target="#carouselWithIndicators"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next carousel-control" type="button" data-bs-target="#carouselWithIndicators"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        </div>
+
+        <div class="col-md-4 project-type" style="background-image:url('images/cranes-construction.jpg')">
+          <div class="black-overlay">
+            <div class="project-icon-title centered">
+              <a class="nav-link" href="education.html">
+              <i class="fa-solid fa-2x fa-school project-icon"></i>
+          
+          <h2 class="project-text">Education</h2>
+        </a>  
+        </div>
+        </div>
+        </div>
+  
+        <div class="col-md-4 project-type" style="background-image:url('images/cranes-construction.jpg')">
+          <div class="black-overlay">
+            <div class="project-icon-title centered">
+              <a class="nav-link" href="commercial.html">
+              <i class="fa-solid fa-2x fa-comments-dollar project-icon"></i>
+          
+          <h2 class="project-text">Commercial</h2>
+        </a>  
+        </div>
+        </div>
+        </div>
+  
+        <div class="col-md-4 project-type" style="background-image:url('images/cranes-construction.jpg')">
+          <div class="black-overlay">
+            <div class="project-icon-title centered">
+              <a class="nav-link" href="hospitality.html">
+              <i class="fa-solid fa-2x fa-hotel project-icon"></i>
+          
+          <h2 class="project-text">Hospitality</h2>
+        </a>  
+        </div>
+        </div>
+        </div>
+  
+        <div class="col-md-4 project-type" style="background-image:url('images/cranes-construction.jpg')">
+          <div class="black-overlay">
+            <div class="project-icon-title centered">
+              <a class="nav-link" href="office.html">
+              <i class="fa-solid fa-2x fa-building project-icon"></i>
+          
+          <h2 class="project-text">Office</h2>
+        </a>  
+        </div>
+        </div>
+        </div>
+  
+        <div class="col-md-4 project-type" style="background-image:url('images/cranes-construction.jpg')">
+          <div class="black-overlay">
+            <div class="project-icon-title centered">
+              <a class="nav-link" href="grocery.html">
+              <i class="fa-solid fa-2x fa-cart-shopping project-icon"></i>
+          
+          <h2 class="project-text">Grocery</h2>
+        </a>  
+        </div>
+        </div>
+        </div>
+  
+        <div class="col-md-4 project-type" style="background-image:url('images/cranes-construction.jpg')">
+          <div class="black-overlay">
+            <div class="project-icon-title centered">
+              <a class="nav-link" href="restaurant.html">
+              <i class="fa-solid fa-2x fa-utensils project-icon"></i>
+          
+          <h2 class="project-text">Restaurant</h2>
+        </a>  
+        </div>
+        </div>
+        </div>
+  
+        <div class="col-md-4 project-type" style="background-image:url('images/cranes-construction.jpg')">
+          <div class="black-overlay">
+            <div class="project-icon-title centered">
+              <a class="nav-link" href="convenience.html">
+              <i class="fa-solid fa-2x fa-shop project-icon"></i>
+          
+          <h2 class="project-text">Convenience</h2>
+        </a>  
+        </div>
+        </div>
+        </div>
+
       </div>
 
 
@@ -260,8 +325,8 @@
 
   <section id="contact" style="background-image: url(images/white-building.jpg);">
     <div class="white-overlay">
-    <div class="homepage-section">
-      
+      <div class="homepage-section">
+
 
         <div class="underlined-title">
           <h1 class="dark-title display-3">
@@ -300,15 +365,15 @@
 
         <div data-aos="fade-in">
           <div class="contact-info">
-          <h5 class="pb-3">Telephone: 303-985-3260</h5>
-          <h5 class="pb-3">Fax: 303-987-2304</h5>
-          <h5 class="pb-3">E-mail: info@jcaace.com</h5>
-          <h5 class="pb-3">Address: 4100 Wadsworth Blvd, Wheat Ridge, CO 80033</h5>
-          <h5 class="pb-3">Hours: M-F 8AM-5PM</h5>
-          <i class="fa-brands fa-linkedin fa-lg contact-icon"></i>
-          <i class="fa-solid fa-envelope fa-lg contact-icon"></i>
+            <h5 class="pb-3">Telephone: 303-985-3260</h5>
+            <h5 class="pb-3">Fax: 303-987-2304</h5>
+            <h5 class="pb-3">E-mail: info@jcaace.com</h5>
+            <h5 class="pb-3">Address: 4100 Wadsworth Blvd, Wheat Ridge, CO 80033</h5>
+            <h5 class="pb-3">Hours: M-F 8AM-5PM</h5>
+            <i class="fa-brands fa-linkedin fa-2x homepage-icon"></i>
+            <i class="fa-solid fa-envelope fa-2x homepage-icon"></i>
+          </div>
         </div>
-      </div>
       </div>
     </div>
   </section>
@@ -317,13 +382,13 @@
   <!-- Footer -->
   <footer>
     <div>
-      <h5 class="footer">
+      <p class="footer">
         ©
         <script>
           document.write(new Date().getFullYear())
         </script>
         JCAA Consulting Engineers, LLC. All Rights Reserved.
-      </h5>
+      </p>
 
     </div>
   </footer>

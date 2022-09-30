@@ -35,9 +35,9 @@
   <section id="navbar">
 
     <!-- Nav Bar -->
-    <nav class="navbar bg-dark navbar-expand-lg navbar-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
       <a class="navbar-brand" href="index.html">
-        <img class="img-fluid jcaa-logo" src="images/jcaalogo.png" alt="jcaa-logo">
+        <img class="img-fluid jcaa-logo" src="images/jcaa-logo.png" alt="jcaa-logo">
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -55,9 +55,17 @@
             <a class="nav-link" href="about.html">
               <h5>About Us</h5></a>
           </li>
-          <li class="nav-item d-flex justify-content-end">
-            <a class="nav-link active" href="services.html">
-              <h5>Services</h5></a>
+          <li class="nav-item dropdown d-flex justify-content-end">
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <h5>Services</h5>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="mechanical.html">Mechanical</a></li>
+              <li><a class="dropdown-item" href="electrical.html">Electrical</a></li>
+              <li><a class="dropdown-item" href="plumbing.html">Plumbing</a></li>
+              <li><a class="dropdown-item" href="structural.html">Structural</a></li>
+              <li><a class="dropdown-item" href="commissioning.html">Commissioning</a></li>
+            </ul>
           </li>
           <li class="nav-item d-flex justify-content-end">
             <a class="nav-link" href="projects.html">
@@ -77,20 +85,25 @@
   </section>
   <div class="services-page">
     <div class="underlined-title about-image" style="background-image:url('images/white-background.jpg')">
-      <h1 class="page-title display-2">
+      <h1 class="page-title">
         <div>SERVICES</div>
         <hr data-aos="slide-right" />
       </h1>
     </div>
 
-
+<div class="row services-container">
     <!--Mechanical Description-->
-    <div class="card">
+    <div class="card col-md-6">
       <div 
       class="services-image" 
       style="background-image: url(images/gears.jpg);">
       <div class="white-overlay">
-        <h1 class="services-info centered">Mechanical Engineering</h1>
+        <i class="fa-solid fa-gear fa-2x homepage-icon"></i>
+        <a
+        class="nav-link"
+        href="mechanical.html">
+        <h2 class="services-info centered">Mechanical Engineering</h2>
+        </a>
       </div>
       </div>
 
@@ -133,12 +146,17 @@
 
     <!--Electrical Description-->
 
-    <div class="card">
+    <div class="card col-md-6">
       <div 
       class="services-image" 
       style="background-image:url(images/lightbulbs2.jpg);">
       <div class="white-overlay">
-        <h1 class="services-info centered">Electrical Engineering</h1>
+        <i class="fa-solid fa-bolt-lightning fa-2x homepage-icon"></i>
+        <a
+        class="nav-link"
+        href="electrical.html">
+        <h2 class="services-info centered">Electrical Engineering</h2>
+        </a>
 </div>
       </div>
 
@@ -183,10 +201,15 @@
 
     <!--Plumbing Description-->
 
-    <div class="card">
+    <div class="card col-md-6">
       <div class="services-image" style="background-image:url(images/pipes.jpg);">
         <div class="white-overlay">
-        <h1 class="services-info centered">Plumbing Services</h1>
+          <i class="fa-solid fa-faucet-drip fa-2x homepage-icon"></i>
+          <a
+          class="nav-link"
+          href="plumbing.html">
+        <h2 class="services-info centered">Plumbing Services</h2>
+        </a>
       </div>
       </div>
 
@@ -241,10 +264,17 @@
 
     <!--Structural Description-->
 
-    <div class="card">
+    <div class="card col-md-6">
       <div class="services-image" style="background-image:url(images/drafting2.jpg);">
         <div class="white-overlay">
-        <h1 class="services-info centered">Structural Engineering</h1>
+          <i class="fa-solid fa-building-columns fa-2x homepage-icon"></i>
+
+          <a 
+          class="nav-link" 
+          href="structural.html">
+          <h2 class="services-info centered">Structural Engineering</h2>
+          </a>
+
 </div>
       </div>
 
@@ -297,25 +327,80 @@
       </div>
 
     </div>
+
+    <!-- Commissioning Description -->
+
+    <div class="card col-md-6">
+      <div 
+      class="services-image" 
+      style="background-image: url(images/gears.jpg);">
+      <div class="white-overlay">
+        <i class="fa-solid fa-circle-check fa-2x homepage-icon"></i>
+        <a
+        class="nav-link"
+        href="commissioning.html">
+        <h2 class="services-info centered">Commissioning Services</h2>
+        </a>
+      </div>
+      </div>
+
+      <div class="services-description text-secondary">
+        <div class="expandMoreContent" id="showMoreContent1">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Diam quis enim lobortis scelerisque fermentum dui. Posuere sollicitudin aliquam
+            ultrices sagittis orci a scelerisque.
+            Massa enim nec dui nunc mattis enim. Mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Leo
+            vel fringilla est ullamcorper eget nulla facilisi. Et malesuada fames ac turpis egestas integer eget aliquet
+            nibh. Vestibulum lectus
+            mauris ultrices eros in cursus turpis. Netus et malesuada fames ac. Libero id faucibus nisl tincidunt eget
+            nullam non nisi est. Tincidunt lobortis feugiat vivamus at. Fermentum odio eu feugiat pretium. Sit amet
+            facilisis magna etiam. Dolor
+            morbi non arcu risus quis varius quam quisque. Nisl rhoncus mattis rhoncus urna neque viverra. Facilisis leo
+            vel fringilla est ullamcorper eget. Posuere ac ut consequat semper viverra nam libero.
+          </p>
+          <p><strong>Experience:</strong> Lorem Ipsum etc etc.</p>
+          <ul>
+            <strong>Mechanical Services:</strong>
+            <li>service</li>
+            <li>service</li>
+            <li>service</li>
+          </ul>
+          <ul>
+            <strong>Sectors:</strong>
+            <li>sector 1</li>
+            <li>sector 2</li>
+            <li>sector 3</li>
+          </ul>
+        </div>
+        <div class="expandMoreHolder">
+          <span expand-more data-hidetext="Show Less..." data-showtext="Show More..." data-target="showMoreContent1"
+            class="btn-expand-more service-btn btn-lg">About Commissioning</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
   </div>
 
 
   <!--Footer-->
   <footer>
-    <div class="row w-60 footer-detail">
-      <div class="col-md-6 mb-4">
-        <h5 style="color: white;">Phone: 303-985-3260</h5>
+    <div class="w-60 footer-detail">
+      <div class="mb-4">
+        <p style="color: white;">Phone: 303-985-3260</p>
 
       </div>
-      <div class="col-md-6 mb-4">
-        <h5 style="color: white;">Fax: 303-987-2304</h5>
+      <div class="mb-4">
+        <p style="color: white;">Fax: 303-987-2304</p>
 
       </div>
     </div>
     <div>
-      <h5>©
+      <p>©
         <script>document.write(new Date().getFullYear())</script> JCAA Consulting Engineers, LLC. All Rights Reserved.
-      </h5>
+      </p>
 
     </div>
   </footer>

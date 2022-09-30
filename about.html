@@ -28,9 +28,9 @@
   <section id="navbar">
 
     <!-- Nav Bar -->
-    <nav class="navbar bg-dark navbar-expand-lg navbar-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
       <a class="navbar-brand" href="index.html">
-        <img class="img-fluid jcaa-logo" src="images/jcaalogo.png" alt="jcaa-logo">
+        <img class="img-fluid jcaa-logo" src="images/jcaa-logo.png" alt="jcaa-logo">
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -42,27 +42,40 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item d-flex justify-content-end">
             <a class="nav-link" href="index.html">
-              <h5>Home</h5></a>
+              <h5>Home</h5>
+            </a>
           </li>
           <li class="nav-item d-flex justify-content-end">
             <a class="nav-link active" href="about.html">
-              <h5>About Us</h5></a>
+              <h5>About Us</h5>
+            </a>
           </li>
-          <li class="nav-item d-flex justify-content-end">
-            <a class="nav-link" href="services.html">
-              <h5>Services</h5></a>
+          <li class="nav-item dropdown d-flex justify-content-end">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <h5>Services</h5>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="mechanical.html">Mechanical</a></li>
+              <li><a class="dropdown-item" href="electrical.html">Electrical</a></li>
+              <li><a class="dropdown-item" href="plumbing.html">Plumbing</a></li>
+              <li><a class="dropdown-item" href="structural.html">Structural</a></li>
+              <li><a class="dropdown-item" href="commissioning.html">Commissioning</a></li>
+            </ul>
           </li>
           <li class="nav-item d-flex justify-content-end">
             <a class="nav-link" href="projects.html">
-              <h5>Projects</h5></a>
+              <h5>Projects</h5>
+            </a>
           </li>
           <li class="nav-item d-flex justify-content-end">
             <a class="nav-link" href="careers.html">
-              <h5>Careers</h5></a>
+              <h5>Careers</h5>
+            </a>
           </li>
           <li class="nav-item d-flex justify-content-end">
             <a class="nav-link" href="index.html#contact">
-              <h5>Contact</h5></a>
+              <h5>Contact</h5>
+            </a>
           </li>
         </ul>
       </div>
@@ -70,35 +83,48 @@
   </section>
 
   <div>
-
-<div class="row about-us">
-    <div class="col-sm-6">
-      <div class="underlined-title">
-        <h1 class="page-title display-2">
+    <div>
+      <div class="underlined-title about-image" style="background-image:url('images/white-background.jpg')">
+        <h1 class="page-title">
           <div>ABOUT US</div>
           <hr data-aos="slide-right" />
         </h1>
       </div>
-      <div class="about-content text-secondary">
-      <p> JCAA Consulting Engineers, LLC is a Mechanical, Electrical, Plumbing and Structural Engineering firm offering
-        design and consulting services. We specialize in commercial projects such as retail shopping centres,
-        multifamily, places of worship, medical facilities, and more. We have the team to take your project from
-        conception to construction to completion. We excel at listening to our clients and providing the right product
-        or design to best fit their needs. Whether it's designing an energy efficient new building or remodeling an
-        existing space, we deliver.</p>
+    </div>
+  </div>
 
-      <p>Members of our team have been in the engineering industry for decades. Several members of our staff have worked
-        together for over 20 years, first at Alber Engineering, then at JBA Consulting Engineers and finally at JCAA.
-        Longevity is a common theme with our employees. Other members of our staff have been designing and managing
-        projects for over 20 years. The common thread that ties all of our employees together is our ability to deliver
-        quality projects and designs on time to our clients.
-      </p>
+    <div class="row about-us">
+
+      <div class="col-lg-6 col-md-12 about-content">
+        <img class="wowzers img-fluid" src="images/team.jpg" alt="Team">
+        <h5 class="text-secondary">"The reward for work well done is the opportunity to do more." -Jonas Salk</h5>
+      </div>
+      <div class="col-lg-6 col-md-12 about-content">
+        <h2>Together we build the future.</h2>
+        <div class="text-secondary">
+          <p> JCAA Consulting Engineers, LLC is a Mechanical, Electrical, Plumbing and Structural Engineering firm
+            offering
+            design and consulting services. We specialize in commercial projects such as retail shopping centres,
+            multifamily, places of worship, medical facilities, and more. We have the team to take your project from
+            conception to construction to completion. We excel at listening to our clients and providing the right
+            product
+            or design to best fit their needs. Whether it's designing an energy efficient new building or remodeling an
+            existing space, we deliver.</p>
+
+          <p>Members of our team have been in the engineering industry for decades. Several members of our staff have
+            worked
+            together for over 20 years, first at Alber Engineering, then at JBA Consulting Engineers and finally at
+            JCAA.
+            Longevity is a common theme with our employees. Other members of our staff have been designing and managing
+            projects for over 20 years. The common thread that ties all of our employees together is our ability to
+            deliver
+            quality projects and designs on time to our clients.
+          </p>
+        </div>
+      </div>
+
     </div>
-    </div>
-    <div class="wowzers col-sm-6 img-fluid" style="background-image: url(images/planning.jpg);">
-    </div>
-  </div>
-  </div>
+  
 
 
   <!-- Personnel Section-->
@@ -106,7 +132,7 @@
   <section id="personnel">
 
     <div class="underlined-title">
-      <h1 class="fw-bold display-2">
+      <h1>
         <div>LEADERSHIP</div>
         <hr data-aos="slide-right" />
       </h1>
@@ -117,57 +143,57 @@
       <div class="staff col-lg-3 col-md-6 col-sm-6">
         <img src="images/profile-img.jpg" alt="joseph-pic" class="profile-pic">
         <div class="personnel-detail">
-        <p >Joseph Gaumond -</p>
-        <p> LEED AP, Principal</p>
+          <p>Joseph Gaumond -</p>
+          <p> LEED AP, Principal</p>
         </div>
       </div>
 
       <div class="staff col-lg-3 col-md-6 col-sm-6">
         <img src="images/profile-img.jpg" alt="CB-pic" class="profile-pic">
         <div class="personnel-detail">
-        <p>Clarence Bernal - </p>
+          <p>Clarence Bernal - </p>
           <p>Principal</p>
-          </div>
+        </div>
       </div>
 
       <div class="staff col-lg-3 col-md-6 col-sm-6">
         <img src="images/profile-img.jpg" alt="nicholas-pic" class="profile-pic">
         <div class="personnel-detail">
-        <p>Nicholas Rohr P.E., S.E.- </p>
+          <p>Nicholas Rohr P.E., S.E.- </p>
           <p>Structural Department Head, Partner</p>
-      </div>
+        </div>
       </div>
 
       <div class="staff col-lg-3 col-md-6 col-sm-6">
         <img src="images/profile-img.jpg" alt="patrick-pic" class="profile-pic">
         <div class="personnel-detail">
-        <p>Patrick Leonard, P.E. - </p>
+          <p>Patrick Leonard, P.E. - </p>
           <p>LEED AP, Project Manager, Partner</p>
-          </div>
+        </div>
       </div>
 
 
-     </div>
+    </div>
   </section>
 
 
 
   <!-- Footer -->
   <footer>
-    <div class="row w-60 footer-detail">
-      <div class="col-md-6 mb-4">
-        <h5 style="color: white;">Phone: 303-985-3260</h5>
+    <div class="w-60 footer-detail">
+      <div class="mb-4">
+        <p style="color: white;">Phone: 303-985-3260</p>
 
       </div>
-      <div class="col-md-6 mb-4">
-        <h5 style="color: white;">Fax: 303-987-2304</h5>
+      <div class="mb-4">
+        <p style="color: white;">Fax: 303-987-2304</p>
 
       </div>
     </div>
     <div>
-      <h5>©
+      <p>©
         <script>document.write(new Date().getFullYear())</script> JCAA Consulting Engineers, LLC. All Rights Reserved.
-      </h5>
+      </p>
 
     </div>
   </footer>

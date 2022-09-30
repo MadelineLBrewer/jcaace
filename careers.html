@@ -30,9 +30,9 @@
   <section id="navbar">
 
     <!-- Nav Bar -->
-    <nav class="navbar bg-dark navbar-expand-lg navbar-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
       <a class="navbar-brand" href="index.html">
-        <img class="img-fluid jcaa-logo" src="images/jcaalogo.png" alt="jcaa-logo">
+        <img class="img-fluid jcaa-logo" src="images/jcaa-logo.png" alt="jcaa-logo">
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -52,10 +52,17 @@
               <h5>About Us</h5>
             </a>
           </li>
-          <li class="nav-item d-flex justify-content-end">
-            <a class="nav-link" href="services.html">
+          <li class="nav-item dropdown d-flex justify-content-end">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <h5>Services</h5>
             </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="mechanical.html">Mechanical</a></li>
+              <li><a class="dropdown-item" href="electrical.html">Electrical</a></li>
+              <li><a class="dropdown-item" href="plumbing.html">Plumbing</a></li>
+              <li><a class="dropdown-item" href="structural.html">Structural</a></li>
+              <li><a class="dropdown-item" href="commissioning.html">Commissioning</a></li>
+            </ul>
           </li>
           <li class="nav-item d-flex justify-content-end">
             <a class="nav-link" href="projects.html">
@@ -80,12 +87,13 @@
   <div class="careers-page">
 
 
-    <div class="underlined-title about-image" style="background-image:url('images/white-background.jpg')">
-      <h1 class="page-title display-2">
-        <div>CAREERS</div>
+    <div class="underlined-title about-image" style="background-image:url('images/denver-city.jpg')">
+      <h1 class="page-title">
+        <div style="color: white">CAREERS AT JCAA ENGINEERING</div>
         <hr data-aos="slide-right" />
       </h1>
     </div>
+
 
     <div class="careers-descriptions text-secondary">
       <p>JCAA Consulting Engineers is always looking for the next great fit for our team. Fill out the form below, or
@@ -137,7 +145,36 @@
         </form>
       </div>
 
-      <div class="accordion" id="accordionExample">
+
+      <div>
+        <ul class="careers-list">
+          <h2 class="">Job Descriptions:</h2>
+
+          <li class="careers-list-item">
+            <a class="anchor" href="mechanical-engineer.html">
+              <h5>Mechanical Engineer</h5>
+            </a>
+          </li>
+        
+
+          <li class="careers-list-item">
+            <a class="anchor" href="electrical-engineer.html">
+              <h5>Electrical Engineer</h5>
+            </a>
+          </li>
+
+          <li class="careers-list-item">
+            <a class="anchor" href="structural-engineer.html">
+              <h5>Structural Engineer</h5>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+
+      <!-- original format for careers -->
+
+      <!-- <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
@@ -238,37 +275,37 @@
           </div>
         </div>
       </div>
+    </div>-->
     </div>
-  </div>
 
-  <!-- Footer -->
-  <footer>
-    <div class="row w-60 footer-detail">
-      <div class="col-md-6 mb-4">
-        <h5 style="color: white;">Phone: 303-985-3260</h5>
+    <!-- Footer -->
+    <footer>
+      <div class="w-60 footer-detail">
+        <div class="mb-4">
+          <p style="color: white;">Phone: 303-985-3260</p>
+
+        </div>
+        <div class="mb-4">
+          <p style="color: white;">Fax: 303-987-2304</p>
+
+        </div>
+      </div>
+      <div>
+        <p>©
+          <script>document.write(new Date().getFullYear())</script> JCAA Consulting Engineers, LLC. All Rights Reserved.
+        </p>
 
       </div>
-      <div class="col-md-6 mb-4">
-        <h5 style="color: white;">Fax: 303-987-2304</h5>
+    </footer>
 
-      </div>
-    </div>
-    <div>
-      <h5>©
-        <script>document.write(new Date().getFullYear())</script> JCAA Consulting Engineers, LLC. All Rights Reserved.
-      </h5>
-
-    </div>
-  </footer>
-
-  <!--Animate on scroll Script-->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 3000,
-      once: true,
-    });
-  </script>
+    <!--Animate on scroll Script-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+        once: true,
+      });
+    </script>
 
 </body>
 
