@@ -10,8 +10,6 @@ h3 {
 }
 
 h4 {
-  /* color: #2C5460;
-  color: gray; */
   color: #1C6758;
 }
 
@@ -23,16 +21,17 @@ hr {
   width: 50%;
   opacity: 1;
   display: block;
-  /* border-top: 5px solid #A0E418; */
   border-top: 5px solid #8CC63F;
-  /* border-top: 5px solid #40826D; */
   margin: 0.25em auto;
 }
 
 .underlined-title {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-bottom: 2em;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Carrois Gothic SC', sans-serif;
 }
 
 .navbar {
@@ -53,6 +52,10 @@ hr {
 .nav-link {
   transition: transform 0.2s;
   margin: 0 10px;
+}
+
+.nav-item{
+  font-family: 'Montserrat', sans-serif;
 }
 
 .nav-link:hover {
@@ -106,6 +109,8 @@ h1 {
 }
 
 .homepage-button {
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Carrois Gothic SC', sans-serif;
   padding: 0 0.5em;
   border-radius: 12px;
   color: #5D5D5D;
@@ -118,12 +123,13 @@ h1 {
 }
 
 .homepage-button:hover {
-  /* background: #F7F7F7; */
   color: white;
 }
 
 .heading-text {
   padding: 2.5% 5%;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Carrois Gothic SC', sans-serif;
 
 }
 
@@ -168,17 +174,13 @@ h5.heading-text {
 }
 
 .big-detail {
-  /* color: #8CC63F; */
+  font-family: 'Montserrat', sans-serif;
   padding-bottom: 7%;
-  /* font-weight: bold; */
 }
 
 .small-detail {
-  /* color: #A0E418; */
-  /* color: #8CC63F; */
-  /* color: #064635; */
-  /* color: #1C6758; */
-  /* color: white; */
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Playfair Display SC', serif;
   color: #5D5D5D;
 
 }
@@ -208,11 +210,11 @@ h5.heading-text {
 
 .service-link {
   text-decoration: none;
+  font-family: 'Playfair Display SC', serif;
 }
 
 .services-category{
   margin: 1.5em 0;
-  /* padding: 0; */
 }
 
 .apple{
@@ -222,8 +224,8 @@ h5.heading-text {
 }
 
 .shape {
-  width: 350px;
-  height: 350px;
+  width: 275px;
+  height: 275px;
   background: white;
   margin: 0 auto;
   -webkit-transition: all .5s ease-out;
@@ -235,6 +237,54 @@ h5.heading-text {
 }
 .shape.circle.to-square:hover {
     clip-path: circle(70% at 50% 50%);
+}
+
+/* The Modal img*/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 75%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#myBtn{
+  margin: 1em;
+}
+
+.unicorn{
+  /* flex-wrap: wrap; */
 }
 
 /***Projects section homepage*/
@@ -293,7 +343,7 @@ h5.heading-text {
   padding: 7% 5% 0;
   text-align: center;
   color: #1C6758;
-
+  font-family: 'Montserrat', sans-serif;
 }
 
 /***Footer*/
@@ -377,8 +427,8 @@ footer {
 
 .service-title {
   text-align: center;
-  margin: 7% 5% 0%;
-  color:#1C6758;
+  margin: 5% 5% 0%;
+  color:#5D5D5D;
   padding-top: 2.25em;
 }
 
@@ -459,15 +509,22 @@ text-align: center;
 }
 
 .text-box{
-  padding-top: 1.5em;
+  /* padding-top: 1.5em; */
   margin: auto auto 2.5em;
   border-radius: 12px;
   background-color: #C4C4C4;
-  height: 150px;
+  /* height: 180px; */
   width: 80%;
   color: white;
   text-align: center;
   line-height: 2;
+}
+
+.inner-text{
+  margin: 1.5em;
+  line-height: 2;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Carrois Gothic SC', sans-serif;
 }
 
 .black-overlay {
@@ -525,6 +582,7 @@ text-align: center;
 .project-text {
   color: white;
   margin-top: 5px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /**************************Careers Page******************/
@@ -567,6 +625,7 @@ text-align: center;
 .flexbox-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
 
@@ -651,18 +710,6 @@ text-align: center;
   transition: ease-out 0.4s;
 }
 
-.slide {
-  /* border: 2px solid gray; */
-  /* font-family: "Lucida Console", Monaco, monospace; */
-  /* border-radius: 12px; */
-  /* display: inline-block; */
-
-  /* box-shadow: inset 0 0 0 0 black;
-  -webkit-transition: ease-out 0.4s;
-  -moz-transition: ease-out 0.4s;
-  transition: ease-out 0.4s; */
-}
-
 .slide-right:hover {
   border-radius: 12px;
   box-shadow: inset 2000px 0 0 0 #1C6758;
@@ -671,7 +718,31 @@ text-align: center;
 /******** Project item page  */
 
 .project-info{
-  padding: 2.5em 4em;
+  padding: 2.5em 0;
+  width: 80%;
+  margin: auto;
+  line-height: 2;
+}
+
+.small-title{
+  padding: 0.5em 0;
+  text-decoration: underline;
+}
+
+.project-img{
+  margin-bottom: 1em;
+  
+}
+
+.project-list{
+  columns: 2;
+  margin-bottom: 2.5em;
+}
+
+@media (max-width: 640px){
+  .project-list{
+    columns: 1;
+  }
 }
 
 
