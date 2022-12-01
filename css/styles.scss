@@ -1,0 +1,792 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Colors
+$logoColor: #8CC63F;
+$darkGreen: #1C6758;
+$darkGray: #5D5D5D;
+$mediumGray: #C4C4C4;
+$lightGray: #F7F7F7;
+
+// Fonts
+$serifFont: 'Playfair Display SC', serif;
+$sansSerifFont:'Montserrat', sans-serif;
+$allCapsFont: 'Carrois Gothic SC', sans-serif;
+
+// Variables
+$roundCorners: 12px;
+
+
+/******************Home Page*************************/
+
+body {
+    height: 100%;
+  }
+  
+  h3 {
+    color: white;
+  }
+  
+  h4 {
+    color: $darkGreen;
+  }
+  
+  h2 {
+    color: $darkGray;
+  }
+  
+  hr {
+    width: 50%;
+    opacity: 1;
+    display: block;
+    border-top: 5px solid $logoColor;
+    margin: 0.25em auto;
+  }
+  
+  .underlined-title {
+    @include flexCenter();
+    font-family: $allCapsFont;
+    padding-bottom: 2em;
+  }
+  
+  .navbar {
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .navbar-brand,
+  .jcaa-logo {
+    padding: 0;
+  }
+  
+  .navbar-toggler,
+  .navbar-collapse {
+    margin: 0 2em;
+  }
+  
+  .nav-link {
+    transition: transform 0.2s;
+    margin: 0 10px;
+  }
+  
+  .nav-item{
+    font-family: $allCapsFont;
+  }
+  
+  .nav-link:hover {
+    transform: scale(1.05);
+  
+  }
+  
+  .homepage-section {
+    padding: 7% 5%;
+  }
+  
+  /***Title Section Homepage*/
+  
+  .container-fluid {
+    padding: 0;
+    background-color: $lightGray;
+    width: 100%;
+  }
+  
+  /****Container holding the image and the text on home page ****/
+  
+  .masthead {
+    background-size: cover;
+    position: relative;
+    color: white;
+    padding-top: 7em;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dark-title {
+    color: $darkGray;
+    font-family: $allCapsFont;
+  }
+  
+  .color-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .top-right {
+    text-align: center;
+    padding: 7% 5%;
+  }
+  
+  .homepage-button {
+    font-family: $sansSerifFont;
+    padding: 0 0.5em;
+    border-radius: $roundCorners;
+    color: $darkGray;
+    border: 2px solid $logoColor;
+    background-color: $lightGray;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+  }
+  
+  .homepage-button:hover {
+    color: white;
+  }
+  
+  .heading-text {
+    padding: 2.5% 5%;
+    margin: auto;
+    width: 80%;
+  }
+  
+  h1.heading-text {
+    line-height: 1.5;
+    font-family: $allCapsFont;
+  }
+  
+  h5.heading-text {
+    line-height: 2;
+    text-align: justify;
+    color: white;
+    font-family: $sansSerifFont;
+  }
+  
+  .see-more {
+    color: white;
+  }
+  
+  /*******Media Queries******/
+  @media(max-width: 871px) {
+    .masthead {
+      min-height: 50vh;
+    }
+  
+    h1 {
+      font-size: calc(1rem + 3.3vw);
+    }
+  }
+  
+  /********* Qualification section home page  */
+  
+  .qualifications {
+    text-align: center;
+    padding: 5%;
+    margin: 0;
+    background-image: linear-gradient(to left top, #ffffff, #d4d4d4, #aaaaaa, #838383, #5d5d5d);
+  }
+  
+  .qualification-item {
+    padding: 2rem 1rem;
+  }
+  
+  .big-detail {
+    font-family: $allCapsFont;
+    padding-bottom: 7%;
+  }
+  
+  .small-detail {
+    font-family: $allCapsFont;
+    color: $darkGray;
+  }
+  
+  /****Services section homepage*/
+  
+  #services {
+    text-align: center;
+    background-color: $lightGray;
+  }
+  
+  .services-section{
+    padding: 7% 10%;
+  }
+  
+  .white-overlay {
+    position: relative;
+    border-radius: $roundCorners;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+  
+  .homepage-icon {
+    color: $logoColor;
+    padding: 0.5em;
+  }
+  
+  .service-link {
+    text-decoration: none;
+    font-family: $serifFont;
+  }
+  
+  .services-category{
+    margin: 1.5em 0;
+    text-align: center;
+  }
+  
+  .apple{
+    @include flexCenter();
+  }
+  
+  .shape {
+    width: 275px;
+    height: 275px;
+    background: white;
+    margin: 0 auto;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+  }
+  .shape.circle {
+    clip-path: circle(50% at 50% 50%);
+  }
+  .shape.circle.to-square:hover {
+      clip-path: circle(70% at 50% 50%);
+  }
+  
+  /* The Modal img*/
+  
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: $lightGray;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 75%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #myBtn{
+    margin: 1em;
+  }
+  
+  
+  /***Projects section homepage*/
+  
+  #projects {
+    text-align: center;
+    background-image: linear-gradient(to left top, #ffffff, #d4d4d4, #aaaaaa, #838383, #5d5d5d);
+  }
+  
+  .project-type {
+    height: 250px;
+    width: 350px;
+    margin: 1em;
+    background-size: cover;
+    border-radius: $roundCorners;
+  }
+  
+  
+  .centered {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .placeholder-for-image {
+    height: 400px;
+    width: 100%;
+    background: white;
+    margin: auto;
+    background-size: cover;
+  }
+  
+  /****Contact section homepage*/
+  
+  .google-maps {
+    position: relative;
+    margin: 1em 3em 0;
+    padding-bottom: 40%;
+    height: 0;
+    overflow: hidden;
+    border-radius: $roundCorners;
+  }
+  
+  .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  
+  .contact-info {
+    padding: 7% 5% 0;
+    text-align: center;
+    color: $darkGreen;
+    // font-family: $serifFont;
+    font-family: $sansSerifFont;
+  }
+  
+  /***Footer*/
+  
+  footer {
+    margin: 0;
+    padding: 7% 5%;
+    text-align: center;
+    color: white;
+    background-color: gray;
+    font-family: $sansSerifFont;
+  }
+  
+  .footer-detail {
+    margin: auto;
+  }
+  
+  /*End Home Page*/
+  
+  /*************************About Page********************/
+  
+  #personnel {
+    text-align: center;
+    padding: 3em 4em;
+    background-image: linear-gradient(to left top, #ffffff, #d4d4d4, #aaaaaa, #838383, #5d5d5d);
+  }
+  
+  .personnel-detail {
+    color: $darkGray;
+  }
+
+  .personnel-detail h5{
+    font-family: $sansSerifFont;
+  }
+
+  .personnel-detail p{
+    font-family: $allCapsFont;
+  }
+  
+  .separator {
+    border-top: 2px solid $mediumGray;
+    margin: 1.5em 0 0 0;
+  }
+  
+  .wowzers {
+    background-size: cover;
+    overflow: hidden;
+    object-fit: cover;
+    display: block;
+    height: 80%;
+    width: 100%;
+    margin-bottom: 2em;
+  }
+
+  .quote{
+    font-family: $sansSerifFont;
+  }
+  
+  .about-content {
+    padding: 0 2em;
+    margin-top: 1em;
+    line-height: 2;
+  }
+
+  .about-content h2{
+    font-family: $allCapsFont;
+  }
+
+  .about-content p{
+    font-family: $sansSerifFont;
+    text-align: justify;
+  }
+  
+  .about-image {
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+    padding-top: 7em;
+  }
+  
+  .about-us {
+    padding: 2em;
+    margin: auto;
+  }
+  
+  .staff {
+    text-align: center;
+  }
+  
+  .profile-pic {
+    max-width: 60%;
+    border-radius: 50%;
+    padding: 1em;
+    
+  }
+  
+  /***********************Services Page*****************/
+  
+  .services-container {
+    padding: 2.5em 4em;
+    margin: 0;
+    background-image: linear-gradient(to left top, #ffffff, #d4d4d4, #aaaaaa, #838383, #5d5d5d);
+  }
+  
+  /***********************Projects Page*******************/
+  
+  .page-title{
+  text-align: center;
+    margin: 7% 5% 0;
+  }
+  
+  .project-container {
+    padding: 4em 0;
+    background-image: linear-gradient(to left top, #ffffff, #d4d4d4, #aaaaaa, #838383, #5d5d5d);
+    /* background-image: linear-gradient(to top, #ffffff, #d3d3d3, #a8a8a8, #7f7f7f, #595959); */
+    margin: auto;
+  }
+  
+  .text-box{
+    margin: auto auto 2.5em;
+    border-radius: $roundCorners;
+    background-color: $mediumGray;
+    width: 80%;
+    color: white;
+    text-align: center;
+    line-height: 2;
+  }
+  
+  .inner-text{
+    margin: 2em;
+
+  }
+
+  .inner-text h4{
+    font-family: $allCapsFont;
+  }
+
+  .inner-text h5{
+    font-family: $sansSerifFont;
+    text-align: justify;
+    line-height: 2;
+  }
+  
+  .black-overlay {
+    border-radius: $roundCorners;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .project-type {
+    position: relative;
+    color: white;
+    padding: 0;
+    text-align: center;
+    @include flexCenter();
+  }
+  
+  .project-type:hover {
+    color: white;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+  }
+  
+  .mybuttonoverlap{
+    position: absolute;
+    z-index: 2;
+    top: 155px;
+    display: none;
+    left: 115px;	
+    font-family: $sansSerifFont;
+    background-color: $lightGray;
+    border-radius: $roundCorners;
+    }
+  
+    .project-type:hover .mybuttonoverlap{ 
+    display:block;
+   color:$darkGreen;
+    }
+  
+    .mybuttonoverlap:hover{
+      background-color: $logoColor;
+    }
+  
+  .slide-up:hover {
+    box-shadow: inset 0 400px 0 0 rgba(28, 103, 88, 0.7);
+  }
+  
+  .project-icon{
+    color: white;
+    margin-top: 70px;
+  }
+  
+  .project-text {
+    color: white;
+    margin-top: 5px;
+    font-family: $allCapsFont;
+  }
+  
+  /**************************Careers Page******************/
+  
+.careers-title{
+    @include flexCenter();
+    font-family: $allCapsFont;
+}
+
+.career-hr{
+    width: 350px;
+}
+
+  .green-border {
+    border: 2px solid $darkGreen;
+  }
+  
+  .contact-form {
+    margin-top: 1.5em;
+    padding: 2em 1em;
+    background-color: $mediumGray;
+    border-radius: $roundCorners;
+  }
+  
+  .careers-descriptions {
+    // color: white;
+    font-family: $sansSerifFont;
+    padding: 5% 10%;
+    line-height: 2;
+    background-color: $lightGray;
+    // background-image: linear-gradient(to left top, #ffffff, #d4d4d4, #aaaaaa, #838383, #5d5d5d);
+  }
+
+  .careers-descriptions p {
+    text-align: justify;
+  }
+  
+  .job-descriptions li{
+    font-family: $serifFont;
+  }
+
+  .careers-list {
+    margin-top: 2em;
+    padding: 2em 1em 1em;
+    background-color: $mediumGray;
+    border-radius: $roundCorners;
+  }
+  
+  .careers-list-item {
+    border: 2px solid gray;
+    background-color: white;
+    margin: 1.5em;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: $roundCorners;
+  }
+  
+  /****************** Service item pages ********/
+  
+  .flexbox-container {
+    @include flexCenter();
+    flex-wrap: wrap;
+    flex-direction: column;
+  
+  }
+
+  .service-title {
+    text-align: center;
+    margin: 5% 5% 0%;
+    color:$darkGray;
+    padding-top: 2.25em;
+  }
+  
+  .experience-div {
+    margin-top: 2em;
+  }
+  
+  .cinderella {
+    border: 2px solid $darkGray;
+    line-height: 2;
+    border-radius: $roundCorners;
+  }
+
+  .cinderella h4{
+    font-family: $allCapsFont;
+  }
+
+  .cinderella h5{
+    font-family: $sansSerifFont;
+  }
+  
+  .lists {
+    padding: 1em;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .box {
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 2.5em;
+  }
+  
+  .title-image {
+    background-size: cover;
+    margin-top: 2.5em;
+    min-width: 80%;
+    min-height: 300px;
+    border-radius: $roundCorners;
+  }
+  
+  .box-2 {
+    line-height: 2;
+    text-align: justify;
+  }
+
+  .box-2 h2{
+    font-family: $allCapsFont;
+  }
+
+  .box-2 p{
+    font-family: $sansSerifFont;
+  }
+  
+  .box-3 {
+    background-color: $mediumGray;
+    min-width: 80%;
+  }
+
+  .box-3 h4{
+    font-family: $allCapsFont;
+  }
+
+  .box-3 li{
+    font-family: $serifFont;
+  }
+  
+  .list-title {
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+  }
+  
+  .service-list {
+    list-style: none;
+    padding: 2em;
+    margin: auto;
+    max-width: 80%;
+  }
+  
+  .service-list-item {
+    border: 2px solid gray;
+    background-color: white;
+    margin: 1.5em;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: $roundCorners;
+  }
+  
+  .anchor {
+    text-decoration: none;
+    color: black;
+    padding: 25px;
+    width: 100%;
+    letter-spacing: 1px;
+    /* font-weight: bold; */
+  }
+  
+  .anchor:hover {
+    color: white;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+  }
+  
+  .slide-right:hover {
+    border-radius: $roundCorners;
+    box-shadow: inset 2000px 0 0 0 $darkGreen;
+  }
+  
+  /******** Project item page  */
+  
+  .project-info{
+    padding: 2.5em 0;
+    width: 80%;
+    margin: auto;
+    line-height: 2;
+  }
+
+  .carousel{
+    padding: 2em 0;
+  }
+  
+  .small-title{
+    padding: 0.5em 0;
+    text-decoration: underline;
+  }
+  
+  .project-img{
+    margin-bottom: 1em;
+    
+  }
+  
+  .project-list{
+    columns: 2;
+    margin-bottom: 2.5em;
+  }
+  
+  @media (max-width: 640px){
+    .project-list{
+      columns: 1;
+    }
+  }
+  
+  
+  /********* Career item pages  */
+  
+  .career-content {
+    margin: 10em 5em 5em;
+    padding: 5em 2.5em;
+    background-color: white;
+  }
+  
+  .linkedin-link {
+    padding: 1em 0;
+  }
+  
+  .career-text {
+    padding-bottom: 1em;
+    text-align: justify;
+  }
+
+  .career-text b{
+    font-family: $allCapsFont;
+  }
+
+  .career-text p, li{
+    font-family: $sansSerifFont;
+  }

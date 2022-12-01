@@ -1,12 +1,10 @@
 /******************Home Page*************************/
-
 body {
   height: 100%;
 }
 
 h3 {
   color: white;
-
 }
 
 h4 {
@@ -29,9 +27,8 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Carrois Gothic SC", sans-serif;
   padding-bottom: 2em;
-  /* font-family: 'Montserrat', sans-serif; */
-  font-family: 'Carrois Gothic SC', sans-serif;
 }
 
 .navbar {
@@ -54,13 +51,12 @@ hr {
   margin: 0 10px;
 }
 
-.nav-item{
-  font-family: 'Montserrat', sans-serif;
+.nav-item {
+  font-family: "Carrois Gothic SC", sans-serif;
 }
 
 .nav-link:hover {
   transform: scale(1.05);
-
 }
 
 .homepage-section {
@@ -68,7 +64,6 @@ hr {
 }
 
 /***Title Section Homepage*/
-
 .container-fluid {
   padding: 0;
   background-color: #F7F7F7;
@@ -76,7 +71,6 @@ hr {
 }
 
 /****Container holding the image and the text on home page ****/
-
 .masthead {
   background-size: cover;
   position: relative;
@@ -92,8 +86,7 @@ h1 {
 
 .dark-title {
   color: #5D5D5D;
-  /* color: #064635; */
-  /* font-weight: bold; */
+  font-family: "Carrois Gothic SC", sans-serif;
 }
 
 .color-overlay {
@@ -109,17 +102,14 @@ h1 {
 }
 
 .homepage-button {
-  /* font-family: 'Montserrat', sans-serif; */
-  font-family: 'Carrois Gothic SC', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 0 0.5em;
   border-radius: 12px;
   color: #5D5D5D;
   border: 2px solid #8CC63F;
   background-color: #F7F7F7;
-  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px, rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
   box-sizing: border-box;
-  /* transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms; */
-
 }
 
 .homepage-button:hover {
@@ -128,19 +118,20 @@ h1 {
 
 .heading-text {
   padding: 2.5% 5%;
-  /* font-family: 'Montserrat', sans-serif; */
-  font-family: 'Carrois Gothic SC', sans-serif;
-
+  margin: auto;
+  width: 80%;
 }
 
 h1.heading-text {
-  /* font-weight: bold; */
   line-height: 1.5;
+  font-family: "Carrois Gothic SC", sans-serif;
 }
 
 h5.heading-text {
   line-height: 2;
+  text-align: justify;
   color: white;
+  font-family: "Montserrat", sans-serif;
 }
 
 .see-more {
@@ -148,25 +139,20 @@ h5.heading-text {
 }
 
 /*******Media Queries******/
-@media(max-width: 871px) {
+@media (max-width: 871px) {
   .masthead {
     min-height: 50vh;
   }
-
   h1 {
     font-size: calc(1rem + 3.3vw);
   }
 }
-
 /********* Qualification section home page  */
-
 .qualifications {
   text-align: center;
   padding: 5%;
   margin: 0;
-  /* background-color: gray; */
   background-image: linear-gradient(to left top, #ffffff, #d4d4d4, #aaaaaa, #838383, #5d5d5d);
-  /* background-color: #064635; */
 }
 
 .qualification-item {
@@ -174,30 +160,28 @@ h5.heading-text {
 }
 
 .big-detail {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Carrois Gothic SC", sans-serif;
   padding-bottom: 7%;
 }
 
 .small-detail {
-  /* font-family: 'Montserrat', sans-serif; */
-  font-family: 'Playfair Display SC', serif;
+  font-family: "Carrois Gothic SC", sans-serif;
   color: #5D5D5D;
-
 }
 
 /****Services section homepage*/
-
 #services {
   text-align: center;
   background-color: #F7F7F7;
 }
 
-.services-section{
+.services-section {
   padding: 7% 10%;
 }
 
 .white-overlay {
   position: relative;
+  border-radius: 12px;
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.75);
@@ -210,14 +194,15 @@ h5.heading-text {
 
 .service-link {
   text-decoration: none;
-  font-family: 'Playfair Display SC', serif;
+  font-family: "Playfair Display SC", serif;
 }
 
-.services-category{
+.services-category {
   margin: 1.5em 0;
+  text-align: center;
 }
 
-.apple{
+.apple {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -228,40 +213,41 @@ h5.heading-text {
   height: 275px;
   background: white;
   margin: 0 auto;
-  -webkit-transition: all .5s ease-out;
-  -moz-transition: all .5s ease-out;
-  transition: all .5s ease-out;
+  transition: all 0.5s ease-out;
 }
+
 .shape.circle {
-  clip-path: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
 }
+
 .shape.circle.to-square:hover {
-    clip-path: circle(70% at 50% 50%);
+  -webkit-clip-path: circle(70% at 50% 50%);
+          clip-path: circle(70% at 50% 50%);
 }
 
 /* The Modal img*/
-
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none;
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+  background-color: #F7F7F7;
+  margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 75%; /* Could be more or less, depending on screen size */
+  width: 75%;
 }
 
 /* The Close Button */
@@ -279,20 +265,13 @@ h5.heading-text {
   cursor: pointer;
 }
 
-#myBtn{
+#myBtn {
   margin: 1em;
 }
 
-.unicorn{
-  /* flex-wrap: wrap; */
-}
-
 /***Projects section homepage*/
-
 #projects {
   text-align: center;
-  /* background-color: #F7F7F7; */
-  /* background-color: gray; */
   background-image: linear-gradient(to left top, #ffffff, #d4d4d4, #aaaaaa, #838383, #5d5d5d);
 }
 
@@ -301,9 +280,8 @@ h5.heading-text {
   width: 350px;
   margin: 1em;
   background-size: cover;
-  border-radius: 10%;
+  border-radius: 12px;
 }
-
 
 .centered {
   position: relative;
@@ -321,7 +299,6 @@ h5.heading-text {
 }
 
 /****Contact section homepage*/
-
 .google-maps {
   position: relative;
   margin: 1em 3em 0;
@@ -343,18 +320,17 @@ h5.heading-text {
   padding: 7% 5% 0;
   text-align: center;
   color: #1C6758;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /***Footer*/
-
 footer {
   margin: 0;
-  padding: 10% 7%;
+  padding: 7% 5%;
   text-align: center;
   color: white;
   background-color: gray;
-
+  font-family: "Montserrat", sans-serif;
 }
 
 .footer-detail {
@@ -362,19 +338,23 @@ footer {
 }
 
 /*End Home Page*/
-
 /*************************About Page********************/
-
 #personnel {
   text-align: center;
   padding: 3em 4em;
-  /* background-color: #c4c4c4; */
   background-image: linear-gradient(to left top, #ffffff, #d4d4d4, #aaaaaa, #838383, #5d5d5d);
 }
 
 .personnel-detail {
-  color: white;
-  /* background-color: #5D5D5D; */
+  color: #5D5D5D;
+}
+
+.personnel-detail h5 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.personnel-detail p {
+  font-family: "Carrois Gothic SC", sans-serif;
 }
 
 .separator {
@@ -385,17 +365,31 @@ footer {
 .wowzers {
   background-size: cover;
   overflow: hidden;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
   height: 80%;
   width: 100%;
   margin-bottom: 2em;
 }
 
+.quote {
+  font-family: "Montserrat", sans-serif;
+}
+
 .about-content {
   padding: 0 2em;
   margin-top: 1em;
   line-height: 2;
+}
+
+.about-content h2 {
+  font-family: "Carrois Gothic SC", sans-serif;
+}
+
+.about-content p {
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
 }
 
 .about-image {
@@ -407,8 +401,7 @@ footer {
 }
 
 .about-us {
-  /* background-color: #eaf3f3; */
-  padding: 2em 0;
+  padding: 2em;
   margin: auto;
 }
 
@@ -418,87 +411,21 @@ footer {
 
 .profile-pic {
   max-width: 60%;
-  height: auto;
   border-radius: 50%;
-  padding: 1.5em 0.5em;
+  padding: 1em;
 }
 
 /***********************Services Page*****************/
-
-.service-title {
-  text-align: center;
-  margin: 5% 5% 0%;
-  color:#5D5D5D;
-  padding-top: 2.25em;
-}
-
 .services-container {
   padding: 2.5em 4em;
+  margin: 0;
   background-image: linear-gradient(to left top, #ffffff, #d4d4d4, #aaaaaa, #838383, #5d5d5d);
 }
 
-.service-type {
-  margin: 2em auto;
-  text-align: center;
-  border-radius: 12px;
-  padding: 0;
-  max-width: 40%;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1)
-}
-
-.services-image {
-  max-width: 100%;
-  height: 250px;
-  background-size: cover;
-  border-radius: 12px;
-}
-
-.service-img {
-  width: 100%;
-  margin: auto;
-}
-
-.service-btn {
-  border-radius: 12px;
-  padding: 0.5em;
-}
-
-.service-btn:hover {
-  background-color: #8CC63F;
-}
-
-.expandMoreContent {
-  height: 5px;
-  overflow: hidden;
-  transition: height 0.5s ease-in-out;
-  position: relative;
-}
-
-.expandMoreContent.expand-active {
-  height: auto;
-  transition: height 0.5s ease-in-out;
-}
-
-.expandMoreHolder {
-  padding: 15px 0;
-  text-align: center;
-}
-
-.btn-expand-more {
-  cursor: pointer;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  display: inline-block;
-}
-
-.services-description {
-  padding: 3.5% 5%;
-}
-
 /***********************Projects Page*******************/
-
-.page-title{
-text-align: center;
-  margin: 7% 5% 0%;
+.page-title {
+  text-align: center;
+  margin: 7% 5% 0;
 }
 
 .project-container {
@@ -508,27 +435,32 @@ text-align: center;
   margin: auto;
 }
 
-.text-box{
-  /* padding-top: 1.5em; */
+.text-box {
   margin: auto auto 2.5em;
   border-radius: 12px;
   background-color: #C4C4C4;
-  /* height: 180px; */
   width: 80%;
   color: white;
   text-align: center;
   line-height: 2;
 }
 
-.inner-text{
-  margin: 1.5em;
+.inner-text {
+  margin: 2em;
+}
+
+.inner-text h4 {
+  font-family: "Carrois Gothic SC", sans-serif;
+}
+
+.inner-text h5 {
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
   line-height: 2;
-  /* font-family: 'Montserrat', sans-serif; */
-  font-family: 'Carrois Gothic SC', sans-serif;
 }
 
 .black-overlay {
-  border-radius: 10%;
+  border-radius: 12px;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
@@ -541,40 +473,39 @@ text-align: center;
   text-align: center;
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 }
 
 .project-type:hover {
   color: white;
-  -webkit-transition: ease-out 0.4s;
-  -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
 }
 
-.mybuttonoverlap{
+.mybuttonoverlap {
   position: absolute;
   z-index: 2;
   top: 155px;
   display: none;
-  left: 115px;	
+  left: 115px;
+  font-family: "Montserrat", sans-serif;
   background-color: #F7F7F7;
   border-radius: 12px;
-  }
+}
 
-  .project-type:hover .mybuttonoverlap{ 
-  display:block;
- color:#1C6758;
-  }
+.project-type:hover .mybuttonoverlap {
+  display: block;
+  color: #1C6758;
+}
 
-  .mybuttonoverlap:hover{
-    background-color: #8CC63F;
-  }
+.mybuttonoverlap:hover {
+  background-color: #8CC63F;
+}
 
 .slide-up:hover {
   box-shadow: inset 0 400px 0 0 rgba(28, 103, 88, 0.7);
 }
 
-.project-icon{
+.project-icon {
   color: white;
   margin-top: 70px;
 }
@@ -582,10 +513,20 @@ text-align: center;
 .project-text {
   color: white;
   margin-top: 5px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Carrois Gothic SC", sans-serif;
 }
 
 /**************************Careers Page******************/
+.careers-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Carrois Gothic SC", sans-serif;
+}
+
+.career-hr {
+  width: 350px;
+}
 
 .green-border {
   border: 2px solid #1C6758;
@@ -594,19 +535,29 @@ text-align: center;
 .contact-form {
   margin-top: 1.5em;
   padding: 2em 1em;
-  background-color: #e7e7e7;
+  background-color: #C4C4C4;
   border-radius: 12px;
 }
 
 .careers-descriptions {
+  font-family: "Montserrat", sans-serif;
   padding: 5% 10%;
   line-height: 2;
+  background-color: #F7F7F7;
+}
+
+.careers-descriptions p {
+  text-align: justify;
+}
+
+.job-descriptions li {
+  font-family: "Playfair Display SC", serif;
 }
 
 .careers-list {
   margin-top: 2em;
   padding: 2em 1em 1em;
-  background-color: #e7e7e7;
+  background-color: #C4C4C4;
   border-radius: 12px;
 }
 
@@ -621,14 +572,19 @@ text-align: center;
 }
 
 /****************** Service item pages ********/
-
 .flexbox-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
+}
 
+.service-title {
+  text-align: center;
+  margin: 5% 5% 0%;
+  color: #5D5D5D;
+  padding-top: 2.25em;
 }
 
 .experience-div {
@@ -639,6 +595,14 @@ text-align: center;
   border: 2px solid #5D5D5D;
   line-height: 2;
   border-radius: 12px;
+}
+
+.cinderella h4 {
+  font-family: "Carrois Gothic SC", sans-serif;
+}
+
+.cinderella h5 {
+  font-family: "Montserrat", sans-serif;
 }
 
 .lists {
@@ -658,18 +622,33 @@ text-align: center;
   margin-top: 2.5em;
   min-width: 80%;
   min-height: 300px;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .box-2 {
   line-height: 2;
+  text-align: justify;
+}
 
+.box-2 h2 {
+  font-family: "Carrois Gothic SC", sans-serif;
+}
+
+.box-2 p {
+  font-family: "Montserrat", sans-serif;
 }
 
 .box-3 {
-  background-color: #e7e7e7;
+  background-color: #C4C4C4;
   min-width: 80%;
+}
 
+.box-3 h4 {
+  font-family: "Carrois Gothic SC", sans-serif;
+}
+
+.box-3 li {
+  font-family: "Playfair Display SC", serif;
 }
 
 .list-title {
@@ -705,8 +684,6 @@ text-align: center;
 
 .anchor:hover {
   color: white;
-  -webkit-transition: ease-out 0.4s;
-  -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
 }
 
@@ -716,38 +693,39 @@ text-align: center;
 }
 
 /******** Project item page  */
-
-.project-info{
+.project-info {
   padding: 2.5em 0;
   width: 80%;
   margin: auto;
   line-height: 2;
 }
 
-.small-title{
+.carousel {
+  padding: 2em 0;
+}
+
+.small-title {
   padding: 0.5em 0;
   text-decoration: underline;
 }
 
-.project-img{
+.project-img {
   margin-bottom: 1em;
-  
 }
 
-.project-list{
-  columns: 2;
+.project-list {
+  -moz-columns: 2;
+       columns: 2;
   margin-bottom: 2.5em;
 }
 
-@media (max-width: 640px){
-  .project-list{
-    columns: 1;
+@media (max-width: 640px) {
+  .project-list {
+    -moz-columns: 1;
+         columns: 1;
   }
 }
-
-
 /********* Career item pages  */
-
 .career-content {
   margin: 10em 5em 5em;
   padding: 5em 2.5em;
@@ -760,4 +738,13 @@ text-align: center;
 
 .career-text {
   padding-bottom: 1em;
+  text-align: justify;
 }
+
+.career-text b {
+  font-family: "Carrois Gothic SC", sans-serif;
+}
+
+.career-text p, li {
+  font-family: "Montserrat", sans-serif;
+}/*# sourceMappingURL=styles.css.map */
