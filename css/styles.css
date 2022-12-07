@@ -1,6 +1,33 @@
+/* carrois-gothic-sc-regular - latin */
+@font-face {
+  font-family: "Carrois Gothic SC";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("fonts/carrois-gothic-sc-v15-latin-regular.woff2") format("woff2"), url("fonts/carrois-gothic-sc-v15-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* playfair-display-sc-regular - latin */
+@font-face {
+  font-family: "Playfair Display SC";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("fonts/playfair-display-sc-v15-latin-regular.woff2") format("woff2"), url("fonts/playfair-display-sc-v15-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("fonts/montserrat-v25-latin-regular.woff2") format("woff2"), url("fonts/montserrat-v25-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /******************Home Page*************************/
-body {
+html {
   height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 h3 {
@@ -103,7 +130,7 @@ h1 {
 
 .homepage-button {
   font-family: "Montserrat", sans-serif;
-  padding: 0 0.5em;
+  padding: 0.5em;
   border-radius: 12px;
   color: #5D5D5D;
   border: 2px solid #8CC63F;
@@ -227,46 +254,24 @@ h5.heading-text {
 }
 
 /* The Modal img*/
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
 /* Modal Content/Box */
 .modal-content {
   background-color: #F7F7F7;
-  margin: 15% auto;
+  margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 75%;
 }
 
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+.modal-img {
+  width: 100%;
 }
 
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+.modal-dialog {
+  max-width: 85%;
 }
 
-#myBtn {
-  margin: 1em;
+.modal-body {
+  padding: 0;
 }
 
 /***Projects section homepage*/
@@ -325,7 +330,7 @@ h5.heading-text {
 
 /***Footer*/
 footer {
-  margin: 0;
+  margin-top: auto;
   padding: 7% 5%;
   text-align: center;
   color: white;
@@ -726,6 +731,13 @@ footer {
   }
 }
 /********* Career item pages  */
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .career-content {
   margin: 10em 5em 5em;
   padding: 5em 2.5em;
