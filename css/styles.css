@@ -3,14 +3,14 @@
   font-family: "Carrois Gothic SC";
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("fonts/carrois-gothic-sc-v15-latin-regular.woff2") format("woff2"), url("fonts/carrois-gothic-sc-v15-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("fonts/carrois-gothic-sc-v15-latin-regular.woff2") format("woff2"), url("fonts/carrois-gothic-sc-v15-latin-regular.woff") format("woff");
 }
 /* playfair-display-sc-regular - latin */
 @font-face {
   font-family: "Playfair Display SC";
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("fonts/playfair-display-sc-v15-latin-regular.woff2") format("woff2"), url("fonts/playfair-display-sc-v15-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("fonts/playfair-display-sc-v15-latin-regular.woff2") format("woff2"), url("fonts/playfair-display-sc-v15-latin-regular.woff") format("woff");
 }
 /* montserrat-regular - latin */
 @font-face {
