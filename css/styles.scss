@@ -4,8 +4,8 @@
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('fonts/carrois-gothic-sc-v15-latin-regular.woff2') format('woff2'),
-       url('fonts/carrois-gothic-sc-v15-latin-regular.woff') format('woff');
+      url('../fonts/carrois-gothic-sc-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/carrois-gothic-sc-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
 }
 
 /* playfair-display-sc-regular - latin */
@@ -14,7 +14,7 @@
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('fonts/playfair-display-sc-v15-latin-regular.woff2') format('woff2'),
+      url('fonts/playfair-display-sc-v15-latin-regular.woff2') format('woff2'),
        url('fonts/playfair-display-sc-v15-latin-regular.woff') format('woff');
 }
 
@@ -24,11 +24,9 @@
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('fonts/montserrat-v25-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('fonts/montserrat-v25-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('fonts/montserrat-v25-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
-
 
 
 @mixin flexCenter {
@@ -57,6 +55,7 @@ $roundCorners: 12px;
 
 html{
   height: 100%;
+  font-size: 100%;
 }
 
 body {
@@ -66,7 +65,7 @@ flex-direction:column;
   }
   
   h3 {
-    color: white;
+    color: $darkGreen;
   }
   
   h4 {
@@ -138,7 +137,6 @@ flex-direction:column;
     background-size: cover;
     position: relative;
     color: white;
-    padding-top: 7em;
   }
   
   h1 {
@@ -161,7 +159,7 @@ flex-direction:column;
   
   .top-right {
     text-align: center;
-    padding: 7% 5%;
+    padding: 10em 5% 7%;
   }
   
   .homepage-button {
@@ -248,7 +246,6 @@ flex-direction:column;
   
   .white-overlay {
     position: relative;
-    border-radius: $roundCorners;
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.75);
@@ -305,6 +302,7 @@ flex-direction:column;
 
   .modal-dialog{
     max-width: 85%;
+    margin-top: 10%;
   }
 
   .modal-body{
@@ -446,7 +444,7 @@ flex-direction:column;
     width: 100%;
     text-align: center;
     background-size: cover;
-    padding-top: 7em;
+    // padding-top: 7em;
   }
   
   .about-us {
@@ -477,7 +475,7 @@ flex-direction:column;
   
   .page-title{
   text-align: center;
-    margin: 7% 5% 0;
+    margin: 15% 5% 0;
   }
   
   .project-container {
@@ -592,7 +590,6 @@ flex-direction:column;
   }
   
   .careers-descriptions {
-    // color: white;
     font-family: $sansSerifFont;
     padding: 5% 10%;
     line-height: 2;
@@ -606,6 +603,7 @@ flex-direction:column;
   
   .job-descriptions li{
     font-family: $serifFont;
+    text-align: center;
   }
 
   .careers-list {
@@ -695,6 +693,7 @@ flex-direction:column;
   .box-3 {
     background-color: $mediumGray;
     min-width: 80%;
+    text-align: center;
   }
 
   .box-3 h4{
@@ -708,6 +707,7 @@ flex-direction:column;
   .list-title {
     border-bottom: 2px solid;
     padding-bottom: 10px;
+    text-align: center;
   }
   
   .service-list {
@@ -729,11 +729,11 @@ flex-direction:column;
   
   .anchor {
     text-decoration: none;
-    color: black;
+    color: $darkGreen;
     padding: 25px;
     width: 100%;
     letter-spacing: 1px;
-    /* font-weight: bold; */
+    font-size: 150%;
   }
   
   .anchor:hover {
@@ -755,6 +755,7 @@ flex-direction:column;
     width: 80%;
     margin: auto;
     line-height: 2;
+    text-align: justify;
   }
 
   .carousel{
