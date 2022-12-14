@@ -25,6 +25,11 @@ html {
   font-size: 100%;
 }
 
+@media (max-width: 700px) {
+  html {
+    font-size: 120%;
+  }
+}
 body {
   display: flex;
   flex-direction: column;
@@ -166,12 +171,12 @@ h5.heading-text {
 }
 
 /*******Media Queries******/
-@media (max-width: 871px) {
+@media (max-width: 800px) {
   .masthead {
-    min-height: 50vh;
+    min-height: 80vh;
   }
   h1 {
-    font-size: calc(1rem + 3.3vw);
+    font-size: 3rem;
   }
 }
 /********* Qualification section home page  */
@@ -384,7 +389,7 @@ footer {
 
 .about-content {
   padding: 0 2em;
-  margin-top: 1em;
+  margin: 2em 0;
   line-height: 2;
 }
 
@@ -429,7 +434,7 @@ footer {
 /***********************Projects Page*******************/
 .page-title {
   text-align: center;
-  margin: 15% 5% 0;
+  margin: 20% 5% 0;
 }
 
 .project-container {
@@ -686,7 +691,7 @@ footer {
   padding: 25px;
   width: 100%;
   letter-spacing: 1px;
-  font-size: 150%;
+  font-size: 1.5rem;
 }
 
 .anchor:hover {
@@ -696,7 +701,8 @@ footer {
 
 .slide-right:hover {
   border-radius: 12px;
-  box-shadow: inset 2000px 0 0 0 #1C6758;
+  background-color: #1C6758;
+  margin: -1px;
 }
 
 /******** Project item page  */

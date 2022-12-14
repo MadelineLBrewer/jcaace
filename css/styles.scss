@@ -47,6 +47,16 @@ $serifFont: 'Playfair Display SC', serif;
 $sansSerifFont:'Montserrat', sans-serif;
 $allCapsFont: 'Carrois Gothic SC', sans-serif;
 
+$fs-lg: 3rem;
+$fs-md: 1.5rem;
+$fs-sm: 1rem;
+
+@media (max-width: 800px){
+  $fs-lg: 5rem;
+  $fs-md: 2rem;
+  $fs-sm: 1.25rem;
+}
+
 // Variables
 $roundCorners: 12px;
 
@@ -58,9 +68,15 @@ html{
   font-size: 100%;
 }
 
+@media(max-width:700px){
+  html{
+    font-size: 120%;
+  }
+}
+
 body {
   display: flex;
-flex-direction:column;
+  flex-direction:column;
     min-height: 100%;
   }
   
@@ -140,7 +156,7 @@ flex-direction:column;
   }
   
   h1 {
-    font-size: 3rem;
+    font-size: $fs-lg;
     color: white;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   }
@@ -200,13 +216,13 @@ flex-direction:column;
   }
   
   /*******Media Queries******/
-  @media(max-width: 871px) {
+  @media(max-width: 800px) {
     .masthead {
-      min-height: 50vh;
+      min-height: 80vh;
     }
   
     h1 {
-      font-size: calc(1rem + 3.3vw);
+      font-size: $fs-lg;
     }
   }
   
@@ -426,7 +442,7 @@ flex-direction:column;
   
   .about-content {
     padding: 0 2em;
-    margin-top: 1em;
+    margin: 2em 0;
     line-height: 2;
   }
 
@@ -475,7 +491,7 @@ flex-direction:column;
   
   .page-title{
   text-align: center;
-    margin: 15% 5% 0;
+    margin: 20% 5% 0;
   }
   
   .project-container {
@@ -733,7 +749,7 @@ flex-direction:column;
     padding: 25px;
     width: 100%;
     letter-spacing: 1px;
-    font-size: 150%;
+    font-size: $fs-md;
   }
   
   .anchor:hover {
@@ -745,7 +761,9 @@ flex-direction:column;
   
   .slide-right:hover {
     border-radius: $roundCorners;
-    box-shadow: inset 2000px 0 0 0 $darkGreen;
+    // box-shadow: inset 2000px 0 0 0 $darkGreen;
+    background-color: $darkGreen;
+    margin: -1px;
   }
   
   /******** Project item page  */
