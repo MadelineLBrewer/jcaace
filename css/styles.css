@@ -22,32 +22,48 @@
 /******************Home Page*************************/
 html {
   height: 100%;
-  font-size: 100%;
 }
 
-@media (max-width: 700px) {
-  html {
-    font-size: 120%;
-  }
-}
 body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
 }
 
-h3 {
-  color: #1C6758;
-}
-
-h4 {
-  color: #1C6758;
+h1 {
+  font-size: 4em;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
   color: #5D5D5D;
+  font-size: 2.7em;
 }
 
+h3 {
+  color: #1C6758;
+  font-size: 2.11em;
+}
+
+h4 {
+  color: #1C6758;
+  font-size: 1.8em;
+}
+
+h5 {
+  font-size: 1.45em;
+}
+
+h6 {
+  font-size: 1.21em;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 3em;
+  }
+}
 hr {
   width: 50%;
   opacity: 1;
@@ -61,12 +77,11 @@ hr {
   justify-content: center;
   align-items: center;
   font-family: "Carrois Gothic SC", sans-serif;
-  padding-bottom: 2em;
 }
 
 .navbar {
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .navbar-brand,
@@ -82,6 +97,10 @@ hr {
 .nav-link {
   transition: transform 0.2s;
   margin: 0 10px;
+}
+
+.nav-link h4 {
+  color: #C4C4C4;
 }
 
 .nav-item {
@@ -110,27 +129,23 @@ hr {
   color: white;
 }
 
-h1 {
-  font-size: 3rem;
-  color: white;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-}
-
 .dark-title {
   color: #5D5D5D;
   font-family: "Carrois Gothic SC", sans-serif;
 }
 
-.color-overlay {
+.masthead-overlay {
   position: relative;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  min-height: 60vh;
 }
 
 .top-right {
   text-align: center;
   padding: 10em 5% 7%;
+  min-height: 60vh;
 }
 
 .homepage-button {
@@ -170,15 +185,6 @@ h5.heading-text {
   color: white;
 }
 
-/*******Media Queries******/
-@media (max-width: 800px) {
-  .masthead {
-    min-height: 80vh;
-  }
-  h1 {
-    font-size: 3rem;
-  }
-}
 /********* Qualification section home page  */
 .qualifications {
   text-align: center;
@@ -258,7 +264,6 @@ h5.heading-text {
 }
 
 /* The Modal img*/
-/* Modal Content/Box */
 .modal-content {
   background-color: #F7F7F7;
   margin: auto;
@@ -389,10 +394,17 @@ footer {
 
 .about-content {
   padding: 0 2em;
-  margin: 2em 0;
+  margin: 1em 0;
   line-height: 2;
+  display: flex;
+  flex-direction: column;
 }
 
+@media (max-width: 550px) {
+  .about-content {
+    padding: 0;
+  }
+}
 .about-content h2 {
   font-family: "Carrois Gothic SC", sans-serif;
 }
@@ -434,13 +446,12 @@ footer {
 /***********************Projects Page*******************/
 .page-title {
   text-align: center;
-  margin: 20% 5% 0;
+  margin: 3em 1em 1em;
 }
 
 .project-container {
   padding: 4em 0;
   background-image: linear-gradient(to left top, #ffffff, #d4d4d4, #aaaaaa, #838383, #5d5d5d);
-  /* background-image: linear-gradient(to top, #ffffff, #d3d3d3, #a8a8a8, #7f7f7f, #595959); */
   margin: auto;
 }
 
@@ -493,9 +504,9 @@ footer {
 .mybuttonoverlap {
   position: absolute;
   z-index: 2;
-  top: 155px;
+  top: 165px;
   display: none;
-  left: 115px;
+  left: 110px;
   font-family: "Montserrat", sans-serif;
   background-color: #F7F7F7;
   border-radius: 12px;
@@ -533,8 +544,11 @@ footer {
   font-family: "Carrois Gothic SC", sans-serif;
 }
 
-.career-hr {
-  width: 350px;
+.color-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .green-border {
@@ -573,6 +587,7 @@ footer {
 
 .careers-list-item {
   border: 2px solid gray;
+  font-size: 1.5em;
   background-color: white;
   margin: 1.5em;
   display: flex;
@@ -601,17 +616,17 @@ footer {
   margin-top: 2em;
 }
 
-.cinderella {
+.service-box {
   border: 2px solid #5D5D5D;
   line-height: 2;
   border-radius: 12px;
 }
 
-.cinderella h4 {
+.service-box h4 {
   font-family: "Carrois Gothic SC", sans-serif;
 }
 
-.cinderella h5 {
+.service-box h5 {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -678,6 +693,7 @@ footer {
 .service-list-item {
   border: 2px solid gray;
   background-color: white;
+  font-size: 1.5em;
   margin: 1.5em;
   display: flex;
   justify-content: start;
@@ -691,7 +707,6 @@ footer {
   padding: 25px;
   width: 100%;
   letter-spacing: 1px;
-  font-size: 1.5rem;
 }
 
 .anchor:hover {
@@ -753,6 +768,12 @@ footer {
   background-color: white;
 }
 
+@media (max-width: 550px) {
+  .career-content {
+    margin: 10em 1em 5em;
+    padding: 2.5em;
+  }
+}
 .linkedin-link {
   padding: 1em 0;
 }
