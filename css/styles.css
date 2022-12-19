@@ -42,12 +42,10 @@ h2 {
 }
 
 h3 {
-  color: #1C6758;
   font-size: 2.11em;
 }
 
 h4 {
-  color: #1C6758;
   font-size: 1.8em;
 }
 
@@ -61,14 +59,29 @@ h6 {
 
 @media (max-width: 900px) {
   h1 {
-    font-size: 3em;
+    font-size: 2.67em;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  h3 {
+    font-size: 1.4em;
+  }
+  h4 {
+    font-size: 1.2em;
+  }
+  h5 {
+    font-size: 0.97em;
+  }
+  h6 {
+    font-size: 0.8em;
   }
 }
 hr {
   width: 50%;
   opacity: 1;
   display: block;
-  border-top: 5px solid #8CC63F;
+  border-top: 3px solid #8CC63F;
   margin: 0.25em auto;
 }
 
@@ -144,7 +157,7 @@ hr {
 
 .top-right {
   text-align: center;
-  padding: 10em 5% 7%;
+  padding: 10em 0 7%;
   min-height: 60vh;
 }
 
@@ -163,8 +176,13 @@ hr {
   color: white;
 }
 
+@media (min-width: 900px) {
+  .heading-hr {
+    max-width: 10%;
+  }
+}
 .heading-text {
-  padding: 2.5% 5%;
+  padding: 2.5% 0;
   margin: auto;
   width: 80%;
 }
@@ -174,17 +192,18 @@ h1.heading-text {
   font-family: "Carrois Gothic SC", sans-serif;
 }
 
-h5.heading-text {
-  line-height: 2;
+h4.heading-text {
+  line-height: 1.75;
   text-align: justify;
   color: white;
   font-family: "Montserrat", sans-serif;
 }
 
-.see-more {
-  color: white;
+@media (max-width: 550px) {
+  .hide {
+    display: none;
+  }
 }
-
 /********* Qualification section home page  */
 .qualifications {
   text-align: center;
@@ -232,6 +251,7 @@ h5.heading-text {
 .service-link {
   text-decoration: none;
   font-family: "Playfair Display SC", serif;
+  color: #5D5D5D;
 }
 
 .services-category {
@@ -239,13 +259,10 @@ h5.heading-text {
   text-align: center;
 }
 
-.apple {
+.shape {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.shape {
   width: 275px;
   height: 275px;
   background: white;
@@ -334,7 +351,7 @@ h5.heading-text {
 .contact-info {
   padding: 7% 5% 0;
   text-align: center;
-  color: #1C6758;
+  color: #5D5D5D;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -458,7 +475,7 @@ footer {
 .text-box {
   margin: auto auto 2.5em;
   border-radius: 12px;
-  background-color: #C4C4C4;
+  background-color: #F7F7F7;
   width: 80%;
   color: white;
   text-align: center;
@@ -469,16 +486,18 @@ footer {
   margin: 2em;
 }
 
-.inner-text h4 {
-  font-family: "Carrois Gothic SC", sans-serif;
-}
-
 .inner-text h5 {
   font-family: "Montserrat", sans-serif;
+  color: #5D5D5D;
   text-align: justify;
   line-height: 2;
 }
 
+@media (max-width: 550px) {
+  .inner-text h5 {
+    text-align: start;
+  }
+}
 .black-overlay {
   border-radius: 12px;
   width: 100%;
@@ -537,13 +556,6 @@ footer {
 }
 
 /**************************Careers Page******************/
-.careers-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Carrois Gothic SC", sans-serif;
-}
-
 .color-overlay {
   position: relative;
   width: 100%;
@@ -573,6 +585,11 @@ footer {
   text-align: justify;
 }
 
+@media (max-width: 550px) {
+  .careers-descriptions p {
+    text-align: start;
+  }
+}
 .job-descriptions li {
   font-family: "Playfair Display SC", serif;
   text-align: center;
@@ -596,6 +613,11 @@ footer {
   border-radius: 12px;
 }
 
+@media (max-width: 350px) {
+  .careers-list-item {
+    margin: 1.5em 0;
+  }
+}
 /****************** Service item pages ********/
 .flexbox-container {
   display: flex;
@@ -607,9 +629,8 @@ footer {
 
 .service-title {
   text-align: center;
-  margin: 5% 5% 0%;
+  margin: 3.25em 1em 1em;
   color: #5D5D5D;
-  padding-top: 2.25em;
 }
 
 .experience-div {
@@ -644,7 +665,6 @@ footer {
 
 .title-image {
   background-size: cover;
-  margin-top: 2.5em;
   min-width: 80%;
   min-height: 300px;
   border-radius: 12px;
@@ -681,6 +701,7 @@ footer {
   border-bottom: 2px solid;
   padding-bottom: 10px;
   text-align: center;
+  color: #1C6758;
 }
 
 .service-list {
@@ -690,10 +711,14 @@ footer {
   max-width: 80%;
 }
 
+@media (max-width: 350px) {
+  .service-list {
+    padding: 1em 0;
+  }
+}
 .service-list-item {
   border: 2px solid gray;
   background-color: white;
-  font-size: 1.5em;
   margin: 1.5em;
   display: flex;
   justify-content: start;
@@ -748,7 +773,7 @@ footer {
   margin-bottom: 2.5em;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 900px) {
   .project-list {
     -moz-columns: 1;
          columns: 1;
@@ -774,8 +799,15 @@ footer {
     padding: 2.5em;
   }
 }
+@media (max-width: 350px) {
+  .career-content {
+    margin: 10em 1em 3em;
+    padding: 1em;
+  }
+}
 .linkedin-link {
-  padding: 1em 0;
+  padding: 0.25em 0;
+  color: #8CC63F;
 }
 
 .career-text {

@@ -75,12 +75,12 @@ body {
   }
   
   h3 {
-    color: $darkGreen;
+    // color: $darkGreen;
     font-size: 2.11em;
   }
   
   h4 {
-    color: $darkGreen;
+    // color: $darkGreen;
     font-size: 1.8em;
   }
 
@@ -95,15 +95,37 @@ body {
 
   @media (max-width: 900px){
     h1{
-    font-size: 3em;
+    font-size: 2.67em;
     }
+
+    h2 {
+      font-size: 1.8em;
+    }
+    
+    h3 {
+      font-size: 1.4em;
+    }
+    
+    h4 {
+      font-size: 1.2em;
+    }
+  
+    h5{
+          font-size: .97em;
+    }
+  
+    h6{
+  
+            font-size: .8em;
+    }
+
   }
   
   hr {
     width: 50%;
     opacity: 1;
     display: block;
-    border-top: 5px solid $logoColor;
+    border-top: 3px solid $logoColor;
     margin: 0.25em auto;
   }
   
@@ -179,7 +201,7 @@ body {
   
   .top-right {
     text-align: center;
-    padding: 10em 5% 7%;
+    padding: 10em 0 7%;
     min-height: 60vh;
   }
   
@@ -197,9 +219,16 @@ body {
   .homepage-button:hover {
     color: white;
   }
+
+  @media (min-width: 900px){
+    .heading-hr{
+      max-width: 10%;
+    }
+  }
+  
   
   .heading-text {
-    padding: 2.5% 5%;
+    padding: 2.5% 0;
     margin: auto;
     width: 80%;
   }
@@ -209,16 +238,19 @@ body {
     font-family: $allCapsFont;
   }
   
-  h5.heading-text {
-    line-height: 2;
+  h4.heading-text {
+    line-height: 1.75;
     text-align: justify;
     color: white;
     font-family: $sansSerifFont;
   }
-  
-  .see-more {
-    color: white;
+ 
+  @media (max-width: 550px){
+    .hide{
+      display: none;
+    }
   }
+
   
   /********* Qualification section home page  */
   
@@ -269,6 +301,7 @@ body {
   .service-link {
     text-decoration: none;
     font-family: $serifFont;
+    color: $darkGray;
   }
   
   .services-category{
@@ -276,11 +309,8 @@ body {
     text-align: center;
   }
   
-  .apple{
-    @include flexCenter();
-  }
-  
   .shape {
+    @include flexCenter();
     width: 275px;
     height: 275px;
     background: white;
@@ -372,7 +402,7 @@ body {
   .contact-info {
     padding: 7% 5% 0;
     text-align: center;
-    color: $darkGreen;
+    color: $darkGray;
     font-family: $sansSerifFont;
   }
   
@@ -503,7 +533,7 @@ body {
   .text-box{
     margin: auto auto 2.5em;
     border-radius: $roundCorners;
-    background-color: $mediumGray;
+    background-color: $lightGray;
     width: 80%;
     color: white;
     text-align: center;
@@ -512,17 +542,19 @@ body {
   
   .inner-text{
     margin: 2em;
-
-  }
-
-  .inner-text h4{
-    font-family: $allCapsFont;
   }
 
   .inner-text h5{
     font-family: $sansSerifFont;
+    color: $darkGray;
     text-align: justify;
     line-height: 2;
+  }
+
+  @media (max-width: 550px){
+    .inner-text h5{
+      text-align: start;
+    }
   }
   
   .black-overlay {
@@ -583,11 +615,7 @@ body {
   }
   
   /**************************Careers Page******************/
-  
-.careers-title{
-    @include flexCenter();
-    font-family: $allCapsFont;
-}
+
 .color-overlay {
   position: relative;
   width: 100%;
@@ -616,6 +644,12 @@ body {
   .careers-descriptions p {
     text-align: justify;
   }
+
+    @media (max-width: 550px){
+    .careers-descriptions p{
+      text-align: start;
+    }
+  }
   
   .job-descriptions li{
     font-family: $serifFont;
@@ -639,6 +673,12 @@ body {
     align-items: center;
     border-radius: $roundCorners;
   }
+
+  @media (max-width:350px){
+    .careers-list-item{
+      margin: 1.5em 0;
+    }
+  }
   
   /****************** Service item pages ********/
   
@@ -651,9 +691,8 @@ body {
 
   .service-title {
     text-align: center;
-    margin: 5% 5% 0%;
+    margin: 3.25em 1em 1em;
     color:$darkGray;
-    padding-top: 2.25em;
   }
   
   .experience-div {
@@ -688,7 +727,6 @@ body {
   
   .title-image {
     background-size: cover;
-    margin-top: 2.5em;
     min-width: 80%;
     min-height: 300px;
     border-radius: $roundCorners;
@@ -725,6 +763,7 @@ body {
     border-bottom: 2px solid;
     padding-bottom: 10px;
     text-align: center;
+    color: $darkGreen;
   }
   
   .service-list {
@@ -733,11 +772,17 @@ body {
     margin: auto;
     max-width: 80%;
   }
+
+  @media (max-width:350px){
+    .service-list{
+      padding: 1em 0;
+    }
+  }
   
   .service-list-item {
     border: 2px solid gray;
     background-color: white;
-    font-size: 1.5em;
+    // font-size: 1.5em;
     margin: 1.5em;
     display: flex;
     justify-content: start;
@@ -795,7 +840,7 @@ body {
     margin-bottom: 2.5em;
   }
   
-  @media (max-width: 640px){
+  @media (max-width: 900px){
     .project-list{
       columns: 1;
     }
@@ -823,9 +868,17 @@ body {
       padding: 2.5em;
     }
   }
+
+  @media (max-width: 350px){
+    .career-content{
+      margin: 10em 1em 3em;
+      padding: 1em;
+    }
+  }
   
   .linkedin-link {
-    padding: 1em 0;
+    padding: .25em 0;
+    color: $logoColor;
   }
   
   .career-text {
