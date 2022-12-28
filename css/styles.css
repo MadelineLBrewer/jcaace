@@ -284,8 +284,11 @@ h4.heading-text {
 .modal-content {
   background-color: #F7F7F7;
   margin: auto;
-  padding: 20px;
   border: 1px solid #888;
+}
+
+.modal-title {
+  color: #5D5D5D;
 }
 
 .modal-img {
@@ -294,13 +297,18 @@ h4.heading-text {
 
 .modal-dialog {
   max-width: 85%;
-  margin-top: 10%;
+  margin: 10em auto auto;
 }
 
 .modal-body {
   padding: 0;
 }
 
+@media (min-width: 1100px) {
+  .modal-dialog {
+    max-width: 60%;
+  }
+}
 /***Projects section homepage*/
 #projects {
   text-align: center;
@@ -618,6 +626,10 @@ footer {
     margin: 1.5em 0;
   }
 }
+.contact-content {
+  margin: 3em 1.5em;
+}
+
 /****************** Service item pages ********/
 .flexbox-container {
   display: flex;
