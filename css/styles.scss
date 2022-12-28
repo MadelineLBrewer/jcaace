@@ -85,7 +85,7 @@ body {
   }
 
   h5{
-        font-size: 1.45em;
+        font-size: 1.35em;
   }
 
   h6{
@@ -545,8 +545,6 @@ body {
     background-color: $lightGray;
     width: 80%;
     color: white;
-    text-align: center;
-    line-height: 2;
   }
   
   .inner-text{
@@ -556,7 +554,7 @@ body {
   .inner-text h5{
     font-family: $sansSerifFont;
     color: $darkGray;
-    text-align: justify;
+    text-align: center;
     line-height: 2;
   }
 
@@ -720,19 +718,24 @@ body {
     line-height: 2;
     border-radius: $roundCorners;
   }
-
-  .service-box h4{
-    font-family: $allCapsFont;
-  }
-
-  .service-box h5{
-    font-family: $sansSerifFont;
-  }
   
   .lists {
     padding: 1em;
-    list-style: none;
-    text-align: center;
+    list-style-type: circle;
+    text-align: justify;
+    line-height: 2;
+    margin: 1.5em 3em;
+  }
+
+  .lists h3{
+    text-decoration: underline;
+    font-family: $allCapsFont;
+  }
+
+  @media (max-width: 550px){
+  .lists{
+    text-align: start;
+  }
   }
   
   .box {

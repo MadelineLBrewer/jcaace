@@ -50,7 +50,7 @@ h4 {
 }
 
 h5 {
-  font-size: 1.45em;
+  font-size: 1.35em;
 }
 
 h6 {
@@ -486,8 +486,6 @@ footer {
   background-color: #F7F7F7;
   width: 80%;
   color: white;
-  text-align: center;
-  line-height: 2;
 }
 
 .inner-text {
@@ -497,7 +495,7 @@ footer {
 .inner-text h5 {
   font-family: "Montserrat", sans-serif;
   color: #5D5D5D;
-  text-align: justify;
+  text-align: center;
   line-height: 2;
 }
 
@@ -655,20 +653,24 @@ footer {
   border-radius: 12px;
 }
 
-.service-box h4 {
+.lists {
+  padding: 1em;
+  list-style-type: circle;
+  text-align: justify;
+  line-height: 2;
+  margin: 1.5em 3em;
+}
+
+.lists h3 {
+  text-decoration: underline;
   font-family: "Carrois Gothic SC", sans-serif;
 }
 
-.service-box h5 {
-  font-family: "Montserrat", sans-serif;
+@media (max-width: 550px) {
+  .lists {
+    text-align: start;
+  }
 }
-
-.lists {
-  padding: 1em;
-  list-style: none;
-  text-align: center;
-}
-
 .box {
   max-width: 80%;
   margin: auto;
