@@ -121,11 +121,13 @@ body {
 
   }
   
-  hr {
+  .green-hr
+  // hr
+   {
+    border-top: 3px solid $logoColor;
     width: 50%;
     opacity: 1;
     display: block;
-    border-top: 3px solid $logoColor;
     margin: 0.25em auto;
   }
   
@@ -453,8 +455,11 @@ body {
   }
   
   .separator {
-    border-top: 2px solid $mediumGray;
+    border-top: 3px solid $mediumGray;
     margin: 1.5em 0 0 0;
+    width: 50%;
+    opacity: 1;
+    display: block;
   }
   
   .wowzers {
