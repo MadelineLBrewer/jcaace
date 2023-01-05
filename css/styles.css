@@ -248,6 +248,14 @@ h4.heading-text {
   padding: 0.5em;
 }
 
+.fa-linkedin {
+  color: #0077B5;
+}
+
+.fa-envelope {
+  color: #5D5D5D;
+}
+
 .service-link {
   text-decoration: none;
   font-family: "Playfair Display SC", serif;
@@ -398,7 +406,7 @@ footer {
 }
 
 .separator {
-  border-top: 3px solid #C4C4C4;
+  border-top: solid #C4C4C4;
   margin: 1.5em 0 0 0;
   width: 50%;
   opacity: 1;
@@ -629,6 +637,11 @@ footer {
 }
 .contact-content {
   margin: 5em;
+  color: #5D5D5D;
+}
+
+.office-info {
+  margin: 1.5em;
 }
 
 /****************** Service item pages ********/
@@ -772,12 +785,23 @@ footer {
 }
 
 .carousel {
-  padding: 2em 0;
+  padding: 1em 0 2em;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  max-width: 100%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 0;
 }
 
 .small-title {
-  padding: 0.5em 0;
+  padding: 0.5em 0 0;
+  text-align: center;
   text-decoration: underline;
+  color: #5D5D5D;
 }
 
 .project-img {

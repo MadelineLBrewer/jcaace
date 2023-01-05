@@ -75,12 +75,10 @@ body {
   }
   
   h3 {
-    // color: $darkGreen;
     font-size: 2.11em;
   }
   
   h4 {
-    // color: $darkGreen;
     font-size: 1.8em;
   }
 
@@ -122,7 +120,6 @@ body {
   }
   
   .green-hr
-  // hr
    {
     border-top: 3px solid $logoColor;
     width: 50%;
@@ -299,6 +296,14 @@ body {
     color: $logoColor;
     padding: 0.5em;
   }
+
+  .fa-linkedin{
+    color: #0077B5;
+  }
+
+  .fa-envelope{
+    color: $darkGray;
+  }
   
   .service-link {
     text-decoration: none;
@@ -455,7 +460,7 @@ body {
   }
   
   .separator {
-    border-top: 3px solid $mediumGray;
+    border-top: solid $mediumGray;
     margin: 1.5em 0 0 0;
     width: 50%;
     opacity: 1;
@@ -697,8 +702,14 @@ body {
 
   .contact-content{
     margin: 5em;
+    color: $darkGray;
+
   }
   
+.office-info{
+  margin: 1.5em;
+}
+
   /****************** Service item pages ********/
   
   .flexbox-container {
@@ -846,12 +857,23 @@ body {
   }
 
   .carousel{
-    padding: 2em 0;
+    padding: 1em 0 2em;
+  }
+
+  .carousel-caption{
+    background-color:rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 0;
   }
   
   .small-title{
-    padding: 0.5em 0;
+    padding: 0.5em 0 0;
+    text-align: center;
     text-decoration: underline;
+    color: $darkGray;
   }
   
   .project-img{
