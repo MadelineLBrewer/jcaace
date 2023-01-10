@@ -349,9 +349,8 @@ h4.heading-text {
 /****Contact section homepage*/
 .google-maps {
   position: relative;
-  margin: 1em 3em 0;
-  padding-bottom: 40%;
-  height: 0;
+  margin: 1em auto 0;
+  max-width: 67%;
   overflow: hidden;
   border-radius: 12px;
 }
@@ -364,8 +363,13 @@ h4.heading-text {
   height: 100% !important;
 }
 
+@media (max-width: 900px) {
+  .google-maps {
+    max-width: 80%;
+  }
+}
 .contact-info {
-  padding: 7% 5% 0;
+  padding: 3em 2em 1em;
   text-align: center;
   color: #5D5D5D;
   font-family: "Montserrat", sans-serif;
@@ -636,12 +640,8 @@ footer {
   }
 }
 .contact-content {
-  margin: 5em;
+  margin: 4em 1em;
   color: #5D5D5D;
-}
-
-.office-info {
-  margin: 1.5em;
 }
 
 /****************** Service item pages ********/
@@ -788,6 +788,20 @@ footer {
   padding: 1em 0 2em;
 }
 
+.carousel-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 67vh;
+  overflow: hidden;
+}
+
+@media (max-width: 550px) {
+  .carousel-item img {
+    height: 40vh;
+  }
+}
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5);
   max-width: 100%;
@@ -854,6 +868,7 @@ footer {
 .career-text {
   padding-bottom: 1em;
   text-align: justify;
+  line-height: 1.5;
 }
 
 .career-text b {
