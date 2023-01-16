@@ -389,7 +389,6 @@ footer {
   margin: auto;
 }
 
-/*End Home Page*/
 /*************************About Page********************/
 #personnel {
   text-align: center;
@@ -775,7 +774,7 @@ footer {
   margin: -1px;
 }
 
-/******** Project item page  */
+/******** Project item page  *******/
 .project-info {
   padding: 2.5em 0;
   width: 80%;
@@ -834,7 +833,7 @@ footer {
          columns: 1;
   }
 }
-/********* Career item pages  */
+/********* Career item pages  ************/
 .flex-wrapper {
   display: flex;
   min-height: 100vh;
