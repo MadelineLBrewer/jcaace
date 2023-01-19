@@ -25,3 +25,9 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 }
+
+//google recaptcha careers page///////
+
+function onSubmit(token) {
+  document.getElementById("contact-form").submit();
+}
